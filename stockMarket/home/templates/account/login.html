@@ -20,8 +20,8 @@
         <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
     {% endif %}
 
-    <form method="POST" action="{% url 'account_login' %}">
-        <div class="form-group container-fluid">
+    <form class="login" method="POST" action="{% url 'account_login' %}">
+        <div class="form-group">
             {% csrf_token %}
             <div>
                 {% if redirect_field_value %}
