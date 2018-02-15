@@ -1,0 +1,35 @@
+<!-- Inhirts the base file-->
+{% extends "home/base.html" %}
+
+<!-- Loading packages contents-->
+{% load i18n %} {% load crispy_forms_tags %}
+
+<!-- Head title-->
+{% block head_title %}{% trans "Signup" %}{% endblock head_title %}
+
+<!-- Content will be merged in the base-->
+{% block content %}
+<div class="container-fluid">
+    <h1>{% trans "Sign Up" %}</h1>
+    <p class="text-muted">
+        {% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}
+    </p>
+
+    <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+        <div class="form-group">
+            <!-- Security purposes-->
+            {% csrf_token %}
+
+            <!-- Use crisypy forms-->
+            {{form|crispy}}
+
+            <!-- Submit button-->
+            <div class="input-group row" style="margin: auto;">
+                <div>
+                    <button type="submit " class="btn btn-primary ">{% trans "Sign Up " %} &raquo;</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock content %}
