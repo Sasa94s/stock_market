@@ -1,0 +1,58 @@
+{% extends "home/base.html" %} {% load i18n %} {% load account socialaccount %} {% block head_title %}{% trans "Sign In" %}{% endblock %} {% block content %}
+<div class="container-fluid">
+    <h1>{% trans "Sign In" %}</h1>
+
+    {% get_providers as socialaccount_providers %} {% if socialaccount_providers %}
+    <p>{% blocktrans with site.name as site_name %}Please sign in with one of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a> for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
+
+    <div class="socialaccount_ballot">
+
+        <ul class="socialaccount_providers">
+            {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+        </ul>
+
+        <div class="login-or">{% trans 'or' %}</div>
+
+    </div>
+
+    {% include "socialaccount/snippets/login_extra.html" %} {% else %}
+    <p class="text-muted">{% blocktrans %}If you have not created an account yet, then please
+        <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+    {% endif %}
+
+    <form method="POST" action="{% url 'account_login' %}">
+        <div class="form-group container-fluid">
+            {% csrf_token %}
+            <div>
+                {% if redirect_field_value %}
+                <input type="hidden" class="form-control" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" /> {% endif %}
+            </div>
+
+            <!-- Username input field-->
+            <div class="row" style="margin: auto;">
+                <div class="col-md-4">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" aria-describedby="userhelp">
+                    <small id="userhelp" class="form-text text-muted" style="margin-bottom: 10px;">Enter username or email</small>
+                </div>
+            </div>
+
+            <!-- password input field-->
+            <div class="row" style="margin: auto;">
+                <div class="col-md-4">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+            </div>
+
+            <!-- Submit button-->
+            <div class="row" style="margin: auto;">
+                <div class="col-md-2">
+                    <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+                    <button class="btn btn-primary primaryAction" style="margin-top: 10px;" type="submit">{% trans "Sign In" %}</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}
