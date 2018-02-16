@@ -1,0 +1,31 @@
+<!-- Inhirts the base file-->
+{% extends "home/base.html" %}
+
+<!-- Loading packages contents-->
+{% load i18n %}
+
+<!-- Head title-->
+{% block head_title %}{% trans "Sign Out" %}{% endblock head_title %}
+
+<!-- Content will be merged in the base-->
+{% block content %}
+<div class="container-fluid">
+    <h1>{% trans "Sign Out" %}</h1>
+    <p class="text-muted">
+        {% trans 'Are you sure you want to sign out?' %}
+    </p>
+
+    <div>
+        <form method="post" action="{% url 'account_logout' %}">
+
+            <!-- Security purposes-->
+            {% csrf_token %}
+
+            <!-- If statment-->
+            {% if redirect_field_value %}
+            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" /> {% endif %}
+            <button type="submit" class="btn btn btn-primary">{% trans 'Sign Out' %}</button>
+        </form>
+    </div>
+</div>
+{% endblock content %}
