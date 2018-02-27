@@ -2,6 +2,10 @@
     * [Setup python 3.6](https://www.python.org/downloads/)
     * [Setup pip to cmd](https://packaging.python.org/tutorials/installing-packages/#install-pip-setuptools-and-wheel)
     * [Setup django library 2.0.2](https://www.djangoproject.com/download/)
+    * [Setup allauth](http://django-allauth.readthedocs.io/en/latest/installation.html)
+    * [Setup crispy-forms](http://django-allauth.readthedocs.io/en/latest/installation.html)
+
+
  ---
     
 * # Run local server :-
