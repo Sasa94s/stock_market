@@ -1,9 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-    <a class="navbar-brand" href="#" style="color:chartreuse; padding:0px; margin-left:10px;">Stock-market  
+    <a class="navbar-brand" href="#" style="color:chartreuse; padding:0px; margin-left:10px;">Stock-market
     </a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -45,24 +46,38 @@
                 <ul class="navbar-nav navbar ml-auto">
 
                     {% if user.is_authenticated %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_email' %}">Change E-mail</a>
-                    </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_logout' %}">Sign Out
-                        </a>
+                    <li class="form-inline ml-auto">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                <img src="log-out.png">
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="{% url 'account_email' %}">Change email</a>
+
+                                <form method="post" action="{% url 'account_logout' %}">
+
+                                    <!-- Security purposes-->
+                                    {% csrf_token %}
+
+                                    <!-- If statment-->
+                                    {% if redirect_field_value %}
+                                    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" /> {% endif %}
+                                    <button class="dropdown-item" type="submit">Sign out</button>
+                                </form>
+
+
+                            </div>
+                        </div>
                     </li>
 
                     {% else %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_login' %}">Sign In
-                        </a>
+                    <li class="form-inline ml-auto">
+                        <a role="button" class="btn btn-info" href="{% url 'account_signup' %}">sign up</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_signup' %}">Sign Up
-                        </a>
+                    <li class="form-inline ml-auto">
+                        <a role="button" class="btn btn-info" href="{% url 'account_login' %}">sign in</a>
                     </li>
                     {% endif %}
                 </ul>

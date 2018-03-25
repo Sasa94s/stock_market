@@ -10,34 +10,7 @@
 <!-- Content will be merged in the base-->
 {% block content %}
 <div class="container-fluid">
-    <h1>{% trans "Sign In" %}</h1>
 
-    {% get_providers as socialaccount_providers %}
-
-    <!-- If statment-->
-    {% if socialaccount_providers %}
-    <p>
-        {% blocktrans with site.name as site_name %} Please sign in with one of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a> for a {{ site_name }} account and sign in below: {% endblocktrans %}
-    </p>
-
-    <div class="socialaccount_ballot">
-
-        <ul class="socialaccount_providers">
-            {% include "socialaccount/snippets/provider_list.html" with process="login" %}
-        </ul>
-
-        <div class="login-or">{% trans 'or' %}</div>
-
-    </div>
-
-    {% include "socialaccount/snippets/login_extra.html" %}
-
-    <!-- Else-->
-    {% else %}
-    <p class="text-muted">{% blocktrans %}If you have not created an account yet, then please
-        <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
-    </p>
-    {% endif %}
 
     <form class="login" method="POST" action="{% url 'account_login' %}">
 
@@ -45,15 +18,51 @@
         {% csrf_token %}
 
         <!-- Use crisypy forms-->
-        {{form|crispy}}
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="border rounded col-md-4">
+                <h1>{% trans "Sign In" %}</h1>
+
+                {% get_providers as socialaccount_providers %}
+
+                <!-- If statment-->
+                {% if socialaccount_providers %}
+                <p>
+                    {% blocktrans with site.name as site_name %} Please sign in with one of your existing third party accounts. Or,
+                    <a href="{{ signup_url }}">sign up</a> for a {{ site_name }} account and sign in below: {% endblocktrans %}
+                </p>
+
+                <div class="socialaccount_ballot">
+
+                    <ul class="socialaccount_providers">
+                        {% include "socialaccount/snippets/provider_list.html" with process="login" %}
+                    </ul>
+
+                    <div class="login-or">{% trans 'or' %}</div>
+
+                </div>
+
+                {% include "socialaccount/snippets/login_extra.html" %}
+
+                <!-- Else-->
+                {% else %} {% endif %}
+                <p class="text-muted">{% blocktrans %}If you have not created an account yet, then please
+                    <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
+                </p>
+                <div>
+                    {{form|crispy}}
+                </div>
+                <div>
+                    <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}
+                    </a>
+                    <button class="btn btn-primary primaryAction" style="margin-top: 10px;" type="submit">{% trans "Sign In" %}</button>
+                </div>
+            </div>
+        </div>
 
         <!-- Submit button-->
         <div class="row" style="margin: auto;">
-            <div>
-                <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}    
-                        </a>
-                <button class="btn btn-primary primaryAction" style="margin-top: 10px;" type="submit">{% trans "Sign In" %}</button>
-            </div>
+
         </div>
     </form>
 </div>
