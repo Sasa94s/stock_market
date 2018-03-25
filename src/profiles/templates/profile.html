@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% load i18n %}
+{% block head_title %}{% trans "Profile" %}{% endblock %}
+{% block content %}
+    <div class="col-md-12 col-sm-offset-0">
+    <h1>{% trans "Profile" %}</h1>
+
+    User Name: {{ user.username }} <br>
+    Email: {{ user.email }} <br>
+    User ID: {{ user.id }} <br>
+    <button onclick="window.location.href='{% url 'account_update' %}'">Edit Profile</button>
+    <button onclick="window.location.href='{% url 'account_change_password' %}'">Change Password</button>
+    <button onclick="window.location.href='{% url 'account_reset_password' %}'">Reset Password</button>
+    <button onclick="window.location.href='{% url 'account_email_verification_sent' %}'">Send verification</button>
+    <button onclick="window.location.href='{% url 'account_logout' %}'">SignOut</button>
+{#    <p><a class="btn btn-success" href="{% url 'account_update' %}" role="button">Edit Profile »</a></p>#}
+{#    <p><a class="btn btn-primary" href="{% url 'account_change_password' %}" role="button">Change Password »</a></p>#}
+{#    <p><a class="btn btn-danger" href="{% url 'account_reset_password' %}" role="button">Reset Password »</a></p>#}
+{#    <p><a class="btn btn-warning" href="{% url 'account_email_verification_sent' %}" role="button">Send verification »</a></p>#}
+{#    <p><a class="btn btn-danger" href="{% url 'account_logout' %}" role="button">SignOut »</a></p>#}
+    </div>
+
+{% endblock %}
