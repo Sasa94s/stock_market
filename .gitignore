@@ -1,0 +1,9 @@
+
+src/.idea
+src/checkout/__pycache__
+src/checkout/migrations
+src/contact/__pycache__
+src/contact/migrations
+src/profiles/__pycache__
+src/profiles/migrations
+src/websitefinal/__pycache__
