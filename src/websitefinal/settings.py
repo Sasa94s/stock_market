@@ -17,8 +17,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_USER = 'gp.django@gmail.com'
+EMAIL_HOST_PASSWORD = '1Dhhdhhghj'
 EMAIL_PORT = '587'
 EMAIL_USE_TLS = True
 
@@ -110,7 +110,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'stockmarket',
         'USER': 'postgres',
-        'PASSWORD': '',
+        'PASSWORD': '1Dhhdhhghj',
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -169,14 +169,16 @@ SITE_ID = 1
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
+ACCOUNT_ADAPTER ="allauth.account.adapter.DefaultAccountAdapter"
 ACCOUNT_AUTHENTICATION_METHOD = "username_email"
-ACCOUNT_CONFIRM_EMAIL_ON_GET = False
+ACCOUNT_CONFIRM_EMAIL_ON_GET = True
 ACCOUNT_EMAIL_CONFIRMATION_ANONYMOUS_REDIRECT_URL = LOGIN_URL
 ACCOUNT_EMAIL_CONFIRMATION_AUTHENTICATED_REDIRECT_URL = None
 
 ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 3
-ACCOUNT_EMAIL_REQUIRED = False
-ACCOUNT_EMAIL_VERIFICATION = None
+ACCOUNT_EMAIL_CONFIRMATION_HMAC =True
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = "optional"
 ACCOUNT_EMAIL_SUBJECT_PREFIX = "My subject: "
 ACCOUNT_DEFAULT_HTTP_PROTOCOL = "http"
 

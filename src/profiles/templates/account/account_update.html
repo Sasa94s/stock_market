@@ -1,19 +1,20 @@
 {% extends 'base.html' %}
-{% load material_form %}
+{#{% load material_form %}#}
+{% load crispy_forms_tags %}
 
 {% block content %}
-    {% include 'material/includes/material_css.html' %}
-    {% include 'material/includes/material_js.html' %}
+{#    {% include 'material/includes/material_css.html' %}#}
+{#    {% include 'material/includes/material_js.html' %}#}
 <!-- Material form is just a materialize thing for django forms -->
-<div class="col s12 m8 offset-m2">
+<div class="col-md-5 col-sm-offset-3">
       <div class="card">
         <div class="card-content">
-        <h2 class="flow-text">Update your information</h2>
+        <h1 class="flow-text">Update your information</h1>
           <form action="." method="POST" class="padding">
-            {% csrf_token %} {{ noodle_form.as_p }}
+            {% csrf_token %} {{ noodle_form|crispy }}
             <div class="divider"></div>
             {{ formset.management_form }}
-                {{ formset.as_p }}
+                {{ formset|crispy }}
             <button type="submit" class="btn-floating btn-large waves-light waves-effect"><i class="large material-icons">done</i></button>
             <a href="#" onclick="window.history.back(); return false;" title="Cancel" class="btn-floating waves-effect waves-light red"><i class="material-icons">history</i></a>
 
