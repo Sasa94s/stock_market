@@ -5,6 +5,9 @@ from django.db.models.signals import post_save
 # Create your models here.
 class UserProfile(models.Model):
     user = models.OneToOneField(User, related_name='user', on_delete=models.PROTECT)
+    # photo = FileField(verbose_name=_("Profile Picture"),
+    #                   upload_to=upload_to("main.UserProfile.photo", "profiles"),
+    #                   format="Image", max_length=255, null=True, blank=True)
     website = models.URLField(default='', blank=True)
     bio = models.TextField(default='', blank=True)
     phone = models.CharField(max_length=20, blank=True, default='')
