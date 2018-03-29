@@ -22,8 +22,6 @@ from profiles import views
 from contact import views as contact_views
 from django.conf.urls import include
 from checkout import views as checkout_views
-from allauth.account.views import confirm_email as allauthemailconfirmation
-
 
 urlpatterns = [
     path('admin/', admin.site.urls, name= 'admin'),

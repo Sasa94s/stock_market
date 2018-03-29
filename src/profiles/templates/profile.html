@@ -2,7 +2,7 @@
 {% extends 'base.html' %}
 
 <!-- Load libraries-->
-{% load crispy_forms_tags %} {% load account socialaccount %} {% load i18n %}
+{% load crispy_forms_tags %} {% load account socialaccount %} {% load i18n %} {% load static %}
 
 <!-- Title-->
 {% block head_title %}{% trans "Profile" %}{% endblock %}
@@ -11,11 +11,24 @@
 {% block content %}
 <div class="col-md-12 col-sm-offset-0">
     <h1>{% trans "Profile" %}</h1>
+    {% if not user.user.photo %}
+        <img src="{% static 'img/default.png' %}" width="250" class='img-responsive' />
+    {% else %}
+        <img src="{{ user.user.photo.url}}" width="250" class='img-responsive'>
+    {% endif %}
+    Username: {{ user.username }} <br>
+    Email: {{ user.email }} <br>
+    Date Joined: {{ user.date_joined }}<br>
+    Bio: {{ user.user.bio }} <br>
+    Phone: {{ user.user.phone }}<br>
+    website: {{ user.user.website }}<br>
+    city: {{ user.user.city }}<br>
+    country: {{ user.user.country }}<br>
+    organization: {{ user.user.organization }}<br>
 
-    User Name: {{ user.username }} <br> Email: {{ user.email }} <br>
     {% for emailaddress in user.emailaddress_set.all %}
     <!-- If statment-->
-                Status: {% if emailaddress.verified %}
+        Status: {% if emailaddress.verified %}
                 <span class="verified">{% trans "Verified" %}</span>
                 {% else %}
                 <span class="unverified">{% trans "Unverified" %}</span>

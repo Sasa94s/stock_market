@@ -35,7 +35,7 @@ def userProfile(request):
     template = 'profile.html'
     return render(request, template, context)
 
-@login_required()  # only logged in users should access this
+@login_required  # only logged in users should access this
 def edit_user(request):
     pk = request.user.pk
     # querying the User object with pk from url
@@ -46,7 +46,7 @@ def edit_user(request):
 
     # The sorcery begins from here, see explanation below
     ProfileInlineFormset = inlineformset_factory(User, UserProfile,
-                                                 fields=('website', 'bio', 'phone', 'city', 'country', 'organization'))
+                                                 fields=('photo', 'website', 'bio', 'phone', 'city', 'country', 'organization'))
     formset = ProfileInlineFormset(instance=user)
 
     if request.user.is_authenticated and request.user.id == user.id:
@@ -55,7 +55,7 @@ def edit_user(request):
             formset = ProfileInlineFormset(request.POST, request.FILES, instance=user)
 
             if user_form.is_valid():
-                created_user = user_form.save(commit=False)
+                created_user = user_form.save()
                 formset = ProfileInlineFormset(request.POST, request.FILES, instance=created_user)
 
                 if formset.is_valid():
@@ -70,3 +70,5 @@ def edit_user(request):
         })
     else:
         raise PermissionDenied
+
+

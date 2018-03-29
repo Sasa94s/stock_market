@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('website', models.URLField(blank=True, default='')),
-                ('bio', models.TextField(blank=True, default='')),
+                ('bio', models.TextField(blank=True, default='', verbose_name='BIO')),
                 ('phone', models.CharField(blank=True, default='', max_length=20)),
                 ('city', models.CharField(blank=True, default='', max_length=100)),
                 ('country', models.CharField(blank=True, default='', max_length=100)),
