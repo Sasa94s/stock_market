@@ -22,7 +22,6 @@ EMAIL_HOST_PASSWORD = '1Dhhdhhghj'
 EMAIL_PORT = '587'
 EMAIL_USE_TLS = True
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
@@ -33,7 +32,6 @@ SECRET_KEY = 't$=)oqq&&ca2z0jb05ozl-db8hq@8%m2+vca96oz(w*_-rlw^8'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -55,6 +53,7 @@ INSTALLED_APPS = [
     'checkout',
     'stripe',
     'material',
+    'djmoney',
 ]
 
 MIDDLEWARE = [
@@ -95,7 +94,6 @@ AUTHENTICATION_BACKENDS = (
 
 WSGI_APPLICATION = 'websitefinal.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
@@ -116,7 +114,6 @@ DATABASES = {
     }
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
@@ -135,7 +132,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
@@ -149,7 +145,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
@@ -161,21 +156,20 @@ if DEBUG:
     MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static", "media")
     STATICFILES_DIRS = (os.path.join(os.path.dirname(BASE_DIR), "static", "static"),)
 
-
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 SITE_ID = 1
 
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
-ACCOUNT_ADAPTER ="allauth.account.adapter.DefaultAccountAdapter"
+ACCOUNT_ADAPTER = "allauth.account.adapter.DefaultAccountAdapter"
 ACCOUNT_AUTHENTICATION_METHOD = "username_email"
 ACCOUNT_CONFIRM_EMAIL_ON_GET = True
 ACCOUNT_EMAIL_CONFIRMATION_ANONYMOUS_REDIRECT_URL = LOGIN_URL
 ACCOUNT_EMAIL_CONFIRMATION_AUTHENTICATED_REDIRECT_URL = None
 
 ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 3
-ACCOUNT_EMAIL_CONFIRMATION_HMAC =True
+ACCOUNT_EMAIL_CONFIRMATION_HMAC = True
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = "optional"
 ACCOUNT_EMAIL_SUBJECT_PREFIX = "My subject: "
@@ -197,7 +191,7 @@ ACCOUNT_PASSWORD_INPUT_RENDER_VALUE = False
 ACCOUNT_PASSWORD_MIN_LENGHT = 6
 ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
 
-SOCIALACCOUNT_ADAPTER ="allauth.socialaccount.adapter.DefaultSocialAccountAdapter"
+SOCIALACCOUNT_ADAPTER = "allauth.socialaccount.adapter.DefaultSocialAccountAdapter"
 SOCIALACCOUNT_QUERY_EMAIL = ACCOUNT_EMAIL_REQUIRED
 SOCIALACCOUNT_EMAIL_VERIFICATION = ACCOUNT_EMAIL_VERIFICATION
 SOCIALACCOUNT_AUTO_SIGNUP = False

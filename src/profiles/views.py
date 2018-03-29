@@ -1,17 +1,11 @@
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render
-from django import forms
 from django.contrib.auth.models import User
-
-from django.shortcuts import render, HttpResponseRedirect
-from django.contrib.auth.decorators import login_required
-from django.contrib.auth.models import User
-from .models import UserProfile
-from .forms import UserForm
-from django.forms.models import inlineformset_factory
 from django.core.exceptions import PermissionDenied
+from django.forms.models import inlineformset_factory
+from django.shortcuts import render, HttpResponseRedirect
 
-
+from .forms import UserForm
+from .models import UserProfile
 
 
 # Create your views here.
@@ -35,6 +29,7 @@ def userProfile(request):
     template = 'profile.html'
     return render(request, template, context)
 
+
 @login_required  # only logged in users should access this
 def edit_user(request):
     pk = request.user.pk
@@ -46,7 +41,9 @@ def edit_user(request):
 
     # The sorcery begins from here, see explanation below
     ProfileInlineFormset = inlineformset_factory(User, UserProfile,
-                                                 fields=('photo', 'website', 'bio', 'phone', 'city', 'country', 'organization'))
+                                                 fields=(
+                                                     'photo', 'website', 'bio', 'phone', 'city', 'country',
+                                                     'organization'))
     formset = ProfileInlineFormset(instance=user)
 
     if request.user.is_authenticated and request.user.id == user.id:
@@ -70,5 +67,3 @@ def edit_user(request):
         })
     else:
         raise PermissionDenied
-
-

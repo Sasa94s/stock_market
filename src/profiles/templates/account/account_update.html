@@ -4,27 +4,29 @@
 {% load static %}
 
 {% block content %}
-{#    {% include 'material/includes/material_css.html' %}#}
-{#    {% include 'material/includes/material_js.html' %}#}
-<!-- Material form is just a materialize thing for django forms -->
-<div class="col-md-5 col-sm-offset-3">
+    {#    {% include 'material/includes/material_css.html' %}#}
+    {#    {% include 'material/includes/material_js.html' %}#}
+    <!-- Material form is just a materialize thing for django forms -->
+    <div class="col-md-5 col-sm-offset-3">
 
         <h1 class="flow-text">Update your information</h1>
-          <form action="." method="POST" class="padding" enctype="multipart/form-data">
-              {% if not user.user.photo %}
-                  <img src="{% static 'img/default.png' %}" width="250" class='img-responsive' />
-              {% else %}
-                  <img src="{{ user.user.photo.url}}" width="250" class='img-responsive'>
-              {% endif %}
+        <form action="." method="POST" class="padding" enctype="multipart/form-data">
+            {% if not user.user.photo %}
+                <img src="{% static 'img/default.png' %}" width="250" class='img-responsive'/>
+            {% else %}
+                <img src="{{ user.user.photo.url }}" width="250" class='img-responsive'>
+            {% endif %}
             {% csrf_token %} {{ noodle_form|crispy }}
             <div class="divider"></div>
             {{ formset.management_form|crispy }}
-                {{ formset|crispy }}
-            <button type="submit" class="btn-floating btn-large waves-light waves-effect"><i class="large material-icons">done</i></button>
-            <a href="#" onclick="window.history.back(); return false;" title="Cancel" class="btn-floating waves-effect waves-light red"><i class="material-icons">history</i></a>
+            {{ formset|crispy }}
+            <button type="submit" class="btn-floating btn-large waves-light waves-effect"><i
+                    class="large material-icons">done</i></button>
+            <a href="#" onclick="window.history.back(); return false;" title="Cancel"
+               class="btn-floating waves-effect waves-light red"><i class="material-icons">history</i></a>
 
-          </form>
-         </div>
-      </div>
-</div>
+        </form>
+    </div>
+    </div>
+    </div>
 {% endblock %}
