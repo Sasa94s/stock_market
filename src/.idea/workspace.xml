@@ -3,50 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="db85bd05-068e-4238-b3c0-9c0c886efa60" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/checkout/admin.py" afterPath="$PROJECT_DIR$/checkout/admin.py" />
-      <change beforePath="$PROJECT_DIR$/checkout/models.py" afterPath="$PROJECT_DIR$/checkout/models.py" />
-      <change beforePath="$PROJECT_DIR$/checkout/templates/checkout.html" afterPath="$PROJECT_DIR$/checkout/templates/checkout.html" />
-      <change beforePath="$PROJECT_DIR$/checkout/tests.py" afterPath="$PROJECT_DIR$/checkout/tests.py" />
-      <change beforePath="$PROJECT_DIR$/checkout/views.py" afterPath="$PROJECT_DIR$/checkout/views.py" />
-      <change beforePath="$PROJECT_DIR$/contact/admin.py" afterPath="$PROJECT_DIR$/contact/admin.py" />
-      <change beforePath="$PROJECT_DIR$/contact/forms.py" afterPath="$PROJECT_DIR$/contact/forms.py" />
-      <change beforePath="$PROJECT_DIR$/contact/models.py" afterPath="$PROJECT_DIR$/contact/models.py" />
-      <change beforePath="$PROJECT_DIR$/contact/templates/contact.html" afterPath="$PROJECT_DIR$/contact/templates/contact.html" />
-      <change beforePath="$PROJECT_DIR$/contact/tests.py" afterPath="$PROJECT_DIR$/contact/tests.py" />
-      <change beforePath="$PROJECT_DIR$/contact/views.py" afterPath="$PROJECT_DIR$/contact/views.py" />
-      <change beforePath="$PROJECT_DIR$/profiles/admin.py" afterPath="$PROJECT_DIR$/profiles/admin.py" />
-      <change beforePath="$PROJECT_DIR$/profiles/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/profiles/migrations/0001_initial.py" />
-      <change beforePath="$PROJECT_DIR$/profiles/migrations/0002_profile_description.py" afterPath="$PROJECT_DIR$/profiles/migrations/0002_profile_description.py" />
-      <change beforePath="$PROJECT_DIR$/profiles/migrations/0003_profile_location.py" afterPath="$PROJECT_DIR$/profiles/migrations/0003_profile_location.py" />
-      <change beforePath="$PROJECT_DIR$/profiles/migrations/0004_profile_ocation.py" afterPath="$PROJECT_DIR$/profiles/migrations/0004_profile_ocation.py" />
-      <change beforePath="$PROJECT_DIR$/profiles/migrations/0005_auto_20180129_0126.py" afterPath="$PROJECT_DIR$/profiles/migrations/0005_auto_20180129_0126.py" />
-      <change beforePath="$PROJECT_DIR$/profiles/migrations/0006_auto_20180129_0142.py" afterPath="$PROJECT_DIR$/profiles/migrations/0006_auto_20180129_0142.py" />
-      <change beforePath="$PROJECT_DIR$/profiles/migrations/0007_auto_20180322_1211.py" afterPath="$PROJECT_DIR$/profiles/migrations/0007_auto_20180322_1211.py" />
-      <change beforePath="$PROJECT_DIR$/profiles/migrations/0013_auto_20180329_2106.py" afterPath="$PROJECT_DIR$/profiles/migrations/0013_auto_20180329_2106.py" />
-      <change beforePath="$PROJECT_DIR$/profiles/migrations/0014_auto_20180329_2124.py" afterPath="$PROJECT_DIR$/profiles/migrations/0014_auto_20180329_2124.py" />
-      <change beforePath="$PROJECT_DIR$/profiles/migrations/0015_auto_20180329_2129.py" afterPath="$PROJECT_DIR$/profiles/migrations/0015_auto_20180329_2129.py" />
-      <change beforePath="$PROJECT_DIR$/profiles/models.py" afterPath="$PROJECT_DIR$/profiles/models.py" />
-      <change beforePath="$PROJECT_DIR$/profiles/templates/about.html" afterPath="$PROJECT_DIR$/profiles/templates/about.html" />
-      <change beforePath="$PROJECT_DIR$/profiles/templates/account/account_update.html" afterPath="$PROJECT_DIR$/profiles/templates/account/account_update.html" />
-      <change beforePath="$PROJECT_DIR$/profiles/templates/account/email.html" afterPath="$PROJECT_DIR$/profiles/templates/account/email.html" />
-      <change beforePath="$PROJECT_DIR$/profiles/templates/account/logout.html" afterPath="$PROJECT_DIR$/profiles/templates/account/logout.html" />
-      <change beforePath="$PROJECT_DIR$/profiles/templates/account/password_change.html" afterPath="$PROJECT_DIR$/profiles/templates/account/password_change.html" />
-      <change beforePath="$PROJECT_DIR$/profiles/templates/account/password_reset.html" afterPath="$PROJECT_DIR$/profiles/templates/account/password_reset.html" />
-      <change beforePath="$PROJECT_DIR$/profiles/templates/account/password_set.html" afterPath="$PROJECT_DIR$/profiles/templates/account/password_set.html" />
-      <change beforePath="$PROJECT_DIR$/profiles/templates/account/signup.html" afterPath="$PROJECT_DIR$/profiles/templates/account/signup.html" />
-      <change beforePath="$PROJECT_DIR$/profiles/templates/base.html" afterPath="$PROJECT_DIR$/profiles/templates/base.html" />
-      <change beforePath="$PROJECT_DIR$/profiles/templates/home.html" afterPath="$PROJECT_DIR$/profiles/templates/home.html" />
-      <change beforePath="$PROJECT_DIR$/profiles/templates/includes/head.html" afterPath="$PROJECT_DIR$/profiles/templates/includes/head.html" />
-      <change beforePath="$PROJECT_DIR$/profiles/templates/includes/navbar.html" afterPath="$PROJECT_DIR$/profiles/templates/includes/navbar.html" />
-      <change beforePath="$PROJECT_DIR$/profiles/templates/profile.html" afterPath="$PROJECT_DIR$/profiles/templates/profile.html" />
-      <change beforePath="$PROJECT_DIR$/profiles/templates/socialaccount/snippets/provider_list.html" afterPath="$PROJECT_DIR$/profiles/templates/socialaccount/snippets/provider_list.html" />
-      <change beforePath="$PROJECT_DIR$/profiles/tests.py" afterPath="$PROJECT_DIR$/profiles/tests.py" />
-      <change beforePath="$PROJECT_DIR$/profiles/views.py" afterPath="$PROJECT_DIR$/profiles/views.py" />
-      <change beforePath="$PROJECT_DIR$/websitefinal/settings.py" afterPath="$PROJECT_DIR$/websitefinal/settings.py" />
-      <change beforePath="$PROJECT_DIR$/websitefinal/urls.py" afterPath="$PROJECT_DIR$/websitefinal/urls.py" />
-      <change beforePath="$PROJECT_DIR$/websitefinal/wsgi.py" afterPath="$PROJECT_DIR$/websitefinal/wsgi.py" />
-      <change beforePath="$PROJECT_DIR$/../static/static/css/main.css" afterPath="$PROJECT_DIR$/../static/static/css/main.css" />
-      <change beforePath="$PROJECT_DIR$/../static/static/css/theme.css" afterPath="$PROJECT_DIR$/../static/static/css/theme.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -300,18 +256,26 @@
       <option name="presentableId" value="Default" />
       <updated>1517176784896</updated>
     </task>
+    <task id="LOCAL-00001" summary="add Credit field with django-Money library -- Need to install it ( pip install django-money )">
+      <created>1522364810900</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1522364810901</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1618" height="1180" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3381877" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32906404" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32906404" sideWeight="0.6322957" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32906404" sideWeight="0.36770427" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32906404" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32906404" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25024632" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23994812" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23994812" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294423" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279743" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -335,6 +299,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add Credit field with django-Money library -- Need to install it ( pip install django-money )" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Credit field with django-Money library -- Need to install it ( pip install django-money )" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -651,6 +619,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -676,6 +645,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
