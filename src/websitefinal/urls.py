@@ -32,7 +32,7 @@ urlpatterns = [
     path('contact/', contact_views.contact, name='contact'),
     path('checkout/', checkout_views.checkout, name='checkout'),
     path('accounts/', include('allauth.urls')),
-    path('accounts/update/', views.edit_user, name='account_update'),
+    path('profile/edit/', views.edit_user, name='account_update'),
 
 ]
 
