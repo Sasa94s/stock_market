@@ -2,40 +2,55 @@
 {% extends 'base.html' %}
 
 <!-- Load libraries-->
-{% load crispy_forms_tags %} {% load account socialaccount %} {% load i18n %}
+{% load crispy_forms_tags %} {% load account socialaccount %} {% load i18n %} {% load static %}
 
 <!-- Title-->
 {% block head_title %}{% trans "Profile" %}{% endblock %}
 
 <!-- Content-->
 {% block content %}
-<div class="col-md-12 col-sm-offset-0">
-    <h1>{% trans "Profile" %}</h1>
-
-    User Name: {{ user.username }} <br> Email: {{ user.email }} <br>
-    {% for emailaddress in user.emailaddress_set.all %}
-    <!-- If statment-->
-                Status: {% if emailaddress.verified %}
-                <span class="verified">{% trans "Verified" %}</span>
-                {% else %}
-                <span class="unverified">{% trans "Unverified" %}</span>
-                <button onclick="window.location.href='{% url 'account_email' %}'">Resend verification</button>
-                {% endif %} {% endfor %} <br>
-    {% for emailaddress in user.emailaddress_set.all %}
-        {% if user.has_usable_password %}
-            <button onclick="window.location.href='{% url 'account_change_password' %}'">Change Password</button>
-            <button onclick="window.location.href='{% url 'account_reset_password' %}'">Reset Password</button>
+    <div class="col-md-12 col-sm-offset-0">
+        <h1>{% trans "Profile" %}</h1>
+        {% if not user.user.photo %}
+            <img src="{% static 'img/default.png' %}" width="250" class='img-responsive'/>
         {% else %}
-            <button onclick="window.location.href='{% url 'account_set_password' %}'">Set Password</button>
+            <img src="{{ user.user.photo.url }}" width="250" class='img-responsive'>
         {% endif %}
-    {% endfor %}
-    <br><button onclick="window.location.href='{% url 'account_update' %}'">Edit Profile</button>
+        Credit: {{ user.user.Credit }} <br>
+        Username: {{ user.username }} <br>
+        Email: {{ user.email }} <br>
+        Date Joined: {{ user.date_joined }}<br>
+        Bio: {{ user.user.bio }} <br>
+        Phone: {{ user.user.phone }}<br>
+        website: {{ user.user.website }}<br>
+        city: {{ user.user.city }}<br>
+        country: {{ user.user.country }}<br>
+        organization: {{ user.user.organization }}<br>
 
 
+        {% for emailaddress in user.emailaddress_set.all %}
+            <!-- If statment-->
+            Status: {% if emailaddress.verified %}
+            <span class="verified">{% trans "Verified" %}</span>
+        {% else %}
+            <span class="unverified">{% trans "Unverified" %}</span>
+            <button onclick="window.location.href='{% url 'account_email' %}'">Resend verification</button>
+        {% endif %} {% endfor %} <br>
+        {% for emailaddress in user.emailaddress_set.all %}
+            {% if user.has_usable_password %}
+                <button onclick="window.location.href='{% url 'account_change_password' %}'">Change Password</button>
+                <button onclick="window.location.href='{% url 'account_reset_password' %}'">Reset Password</button>
+            {% else %}
+                <button onclick="window.location.href='{% url 'account_set_password' %}'">Set Password</button>
+            {% endif %}
+        {% endfor %}
+        <br>
+        <button onclick="window.location.href='{% url 'account_update' %}'">Edit Profile</button>
 
 
-    <br><button onclick="window.location.href='{% url 'account_logout' %}'">SignOut</button>
-</div>
+        <br>
+        <button onclick="window.location.href='{% url 'account_logout' %}'">SignOut</button>
+    </div>
 
 
 {% endblock %}
