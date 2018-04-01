@@ -3,10 +3,8 @@ body {
   padding-bottom: 30px;
 }
 
-.theme-dropdown .dropdown-menu {
-  position: static;
-  display: block;
-  margin-bottom: 20px;
+.dropdown-menu {
+min-width:300px;
 }
 
 .theme-showcase > p > .btn {
