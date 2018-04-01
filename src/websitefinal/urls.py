@@ -23,10 +23,13 @@ from checkout import views as checkout_views
 from contact import views as contact_views
 from profiles import views
 from profiles import views as profiles_views
+from dataVisualization import views as data_visual
 
 urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
     path('', profiles_views.home, name='home'),
+    path('home/', profiles_views.home, name='home'),
+    path('diagrams/', data_visual.diagrams, name='diagrams'),
     path('about/', profiles_views.about, name='about'),
     path('profile/', profiles_views.userProfile, name='profile'),
     path('contact/', contact_views.contact, name='contact'),
