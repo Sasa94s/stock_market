@@ -8,7 +8,8 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -21,33 +22,13 @@
 
                 <li {% if request.path == home %} class="active" {% endif %}><a href="{% url 'home' %}">Home</a></li>
                 <li {% if request.path == about %} class="active" {% endif %}><a href="{% url 'about' %}">About</a></li>
-                <li {% if request.path == contact %} class="active" {% endif %}><a href="{% url 'contact' %}">Contact</a></li>
-                <li {% if request.path == Profile %} class="active" {% endif %}><a href="{% url 'profile' %}">Profile</a></li>
+                <li {% if request.path == contact %} class="active" {% endif %}><a
+                    href="{% url 'contact' %}">Contact</a></li>
 
+                <!-- Dropdown part-->
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        Accounts <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        {% if not request.user.is_authenticated %}
-                        <li><a href="{% url 'account_login' %}">Login</a></li>
-                        <li><a href="{% url 'account_signup' %}">Signup</a></li>
-                        {% else %}
-                        <li><a href="{% url 'account_logout' %}">Logout</a></li>
-                        {% endif %}
-                       
-  	       
-                        {% if user.is_superuser %}
- <li role="separator" class="divider"></li>
-
-                        <li class="dropdown-header">Admin Page</li>
-                        <li {% if request.path == admin %} class="active" {% endif %}><a href="http://127.0.0.1:8000/admin">Admin</a></li>
-                        {% endif %}
-
-                                  </ul>
-                </li>
-
-                <li class="dropdown">
-                    <a class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <a class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">
                         {% if not user.user.photo %}
                             <img src="{% static 'img/default.png' %}" width="20" class='img-responsive'/>
                         {% else %}
@@ -56,46 +37,60 @@
                     <ul class="dropdown-menu">
                         <div>
                             {% if request.user.is_authenticated %}
-                            <h3 style="padding: 5%">Credit: {{ user.user.Credit }}</h3>
+                                <h3 style="padding: 5%">Credit: {{ user.user.Credit }}</h3>
                             {% else %}
-                            <form class="login" method="POST" action="{% url 'account_login' %}" style="padding: 5%">
-                                {% csrf_token %}
+                                <form class="login" method="POST" action="{% url 'account_login' %}"
+                                      style="padding: 5%">
+                                    {% csrf_token %}
 
-                                <div id="div_id_login" class="form-group"><label for="id_login" class="control-label  requiredField">
+                                    <div id="div_id_login" class="form-group"><label for="id_login"
+                                                                                     class="control-label  requiredField">
                                         Login<span class="asteriskField">*</span> </label>
-                                    <div class="controls "><input type="text" name="login" placeholder="Username or e-mail" autofocus="autofocus" class="textinput textInput form-control" required="" id="id_login"></div>
-                                </div>
-                                <div id="div_id_password" class="form-group"><label for="id_password" class="control-label  requiredField">
+                                        <div class="controls "><input type="text" name="login"
+                                                                      placeholder="Username or e-mail"
+                                                                      autofocus="autofocus"
+                                                                      class="textinput textInput form-control"
+                                                                      required="" id="id_login"></div>
+                                    </div>
+                                    <div id="div_id_password" class="form-group"><label for="id_password"
+                                                                                        class="control-label  requiredField">
                                         Password<span class="asteriskField">*</span> </label>
-                                    <div class="controls "><input type="password" name="password" placeholder="Password" class="textinput textInput form-control" required="" id="id_password"></div>
-                                </div>
-                                <div class="form-group">
-                                    <div id="div_id_remember" class="checkbox"><label for="id_remember" class="">
+                                        <div class="controls "><input type="password" name="password"
+                                                                      placeholder="Password"
+                                                                      class="textinput textInput form-control"
+                                                                      required="" id="id_password"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div id="div_id_remember" class="checkbox"><label for="id_remember" class="">
                                             <input type="checkbox" name="remember" class="checkboxinput"
                                                    id="id_remember">
                                             Remember Me
                                         </label></div>
-                                </div>
+                                    </div>
 
 
-                                <a class="btn btn-link button secondaryAction" href="{% url 'account_reset_password' %}">Forgot Password?</a>
-                                <a class="btn btn-link button secondaryAction" href="{% url 'account_signup' %}">Sign
+                                    <a class="btn btn-link button secondaryAction"
+                                       href="{% url 'account_reset_password' %}">Forgot Password?</a>
+                                    <a class="btn btn-link button secondaryAction" href="{% url 'account_signup' %}">Sign
                                         Up</a>
-                                <button class=" btn btn-default primaryAction" type="submit">Sign In</button>
-                            </form>
+                                    <button class=" btn btn-default primaryAction" type="submit">Sign In</button>
+                                </form>
                             {% endif %}
                         </div>
 
                         {% if request.user.is_authenticated %}
-                        <li><a href="{% url 'profile' %}">Profile</a></li>
-                        <li><a href="{% url 'account_update' %}">Edit Profile</a></li>
-                        <li><a href="{% url 'account_logout' %}">Logout</a></li>
+                            <li><a href="{% url 'profile' %}">Profile</a></li>
+                            <li><a href="{% url 'account_update' %}">Edit Profile</a></li>
+                            <li><a href="{% url 'account_logout' %}">Logout</a></li>
                         {% endif %}
-                        <li role="separator" class="divider"></li>
-                        <li class="dropdown-header">Nav header</li>
-                        <li {% if request.path == admin %} class="active" {% endif %}><a href="http://127.0.0.1:8000/admin">Admin</a></li>
-                        <li><a href="#">One more separated link</a></li>
 
+                        <!-- Admin additional options-->
+                        {% if user.is_superuser %}
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Admin options</li>
+                            <li {% if request.path == admin %} class="active" {% endif %}><a
+                                href="http://127.0.0.1:8000/admin">Admin</a></li>
+                        {% endif %}
 
                     </ul>
                 </li>
