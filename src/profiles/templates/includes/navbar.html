@@ -1,8 +1,9 @@
+<!-- Load files from static folder-->
 {% load static %}
-{% url 'home' as home %}
-{% url 'about' as about %}
-{% url 'contact' as contact %}
-{% url 'profile' as profile %}
+
+<!-- Declare variables contain the url name-->
+{% url 'home' as home %} {% url 'about' as about %} {% url 'contact' as contact %} {% url 'profile' as profile %} {% url 'diagrams' as diagrams %}
+
 <!-- Fixed navbar -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
@@ -22,29 +23,9 @@
                 <li {% if request.path == home %} class="active" {% endif %}><a href="{% url 'home' %}">Home</a></li>
                 <li {% if request.path == about %} class="active" {% endif %}><a href="{% url 'about' %}">About</a></li>
                 <li {% if request.path == contact %} class="active" {% endif %}><a
-                        href="{% url 'contact' %}">Contact</a></li>
-                <li {% if request.path == Profile %} class="active" {% endif %}><a
-                        href="{% url 'profile' %}">Profile</a></li>
+                    href="{% url 'contact' %}">Contact</a></li>
 
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">
-                        Accounts <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        {% if not request.user.is_authenticated %}
-                            <li><a href="{% url 'account_login' %}">Login</a></li>
-                            <li><a href="{% url 'account_signup' %}">Signup</a></li>
-                        {% else %}
-                            <li><a href="{% url 'account_logout' %}">Logout</a></li>
-                        {% endif %}
-                        <li role="separator" class="divider"></li>
-                        <li class="dropdown-header">Nav header</li>
-                        <li {% if request.path == admin %} class="active" {% endif %}><a
-                                href="http://127.0.0.1:8000/admin">Admin</a></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
-
+                <!-- Dropdown part-->
                 <li class="dropdown">
                     <a class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">
@@ -102,16 +83,19 @@
                             <li><a href="{% url 'account_update' %}">Edit Profile</a></li>
                             <li><a href="{% url 'account_logout' %}">Logout</a></li>
                         {% endif %}
-                        <li role="separator" class="divider"></li>
-                        <li class="dropdown-header">Nav header</li>
-                        <li {% if request.path == admin %} class="active" {% endif %}><a
-                                href="http://127.0.0.1:8000/admin">Admin</a></li>
-                        <li><a href="#">One more separated link</a></li>
 
+                        <!-- Admin additional options-->
+                        {% if user.is_superuser %}
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Admin options</li>
+                            <li {% if request.path == admin %} class="active" {% endif %}><a
+                                href="http://127.0.0.1:8000/admin">Admin</a></li>
+                        {% endif %}
 
                     </ul>
                 </li>
             </ul>
-        </div><!--/.nav-collapse -->
+        </div>
+        <!--/.nav-collapse -->
     </div>
 </nav>
