@@ -7,7 +7,6 @@
 {% url 'contact' as contact %}
 {% url 'profile' as profile %}
 {% url 'diagrams' as diagrams %}
-{% url 'admin   ' as diagrams %}
 
 <!-- Fixed navbar -->
 <nav id="#navbar" class="navbar navbar-dark bg-dark navbar-expand-lg">
@@ -35,6 +34,19 @@
             <li {% if request.path == contact %} class="nav-item active" {% endif %}>
                 <a href="{% url 'contact' %}" class="nav-link">Contact</a>
             </li>
+        <li {% if request.path == contact %} class="nav-item active" {% endif %}>
+                <a href="{% url 'diagrams' %}" class="nav-link">Diagrams</a>
+            </li>
+
+            <!-- Admin additional options-->
+            {% if user.is_superuser %}
+                <li {% if request.path == contact %} class="nav-item active" {% endif %}>
+                <a href="http://127.0.0.1:8000/admin" class="nav-link">Admin</a>
+            {% endif %}
+
+            </li>
+
+
 
             <!-- Dropdown part-->
             <li class="nav-item dropdown">
@@ -100,14 +112,9 @@
                         <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
                     {% endif %}
 
-                    <!-- Admin additional options-->
-                    {% if user.is_superuser %}
-                        <div role="separator" class="divider"></div>
-                        <a class="dropdown-header">Admin options</a>
-                        <a {% if request.path == admin %} class="active dropdown-item" {% endif %}
-                                                          href="http://127.0.0.1:8000/admin">
-                        </a>
-                    {% endif %}
+
         </ul>
     </div>
+
+
 </nav>

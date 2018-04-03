@@ -1,3 +1,15 @@
-h1 {color: #4f45ff;}
-h3 {color: rgb(120, 72, 205)
+.dropdown-menu {
+  min-width: 300px;
 }
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+
+
+h1 {color: #4f45ff;}
+h3 {color: rgb(120, 72, 205)}

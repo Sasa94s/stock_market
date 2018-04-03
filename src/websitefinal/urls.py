@@ -21,9 +21,9 @@ from django.urls import path
 
 from checkout import views as checkout_views
 from contact import views as contact_views
+from dataVisualization import views as data_visual
 from profiles import views
 from profiles import views as profiles_views
-from dataVisualization import views as data_visual
 
 urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
