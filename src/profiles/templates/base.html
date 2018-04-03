@@ -1,5 +1,4 @@
 <!-- Laod files from static folder-->
-{% load staticfiles %}
 {% load static %}
 
 <!DOCTYPE html>
@@ -19,8 +18,11 @@
     {% block content %} {% endblock content %}
 </div>
 
+<!-- Footer snippet-->
+{% include 'includes/footer.html' %}
 <!-- Script snippet-->
 {% include 'includes/script.html' %}
+
 </body>
 
 </html>
