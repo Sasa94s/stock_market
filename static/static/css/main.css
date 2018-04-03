@@ -1,3 +1,38 @@
-h1 {color: #4f45ff;}
-h3 {color: rgb(120, 72, 205)
+
+body {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    background-color:#ddddbb ;
+    background-image: url('../img/home.jpeg');
+    -webkit-border-image: url('../img/home.jpeg')
 }
+
+.probu{
+   
+}
+.signbu{
+
+    margin-bottom: 1000px;
+}
+
+h1{
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    border: white;
+border-bottom-style:double;
+border-bottom-width: medium;
+}
+
+.one{
+    color: blue;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.col-md-12 {
+    width: 100%;
+    
+}
+
