@@ -36,6 +36,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'dataVisualization',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -106,7 +107,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'stockmarket',
         'USER': 'postgres',
-        'PASSWORD': '123456',
+        'PASSWORD': '5265104d',
         'HOST': 'localhost',
         'PORT': '5432',
     }
