@@ -51,8 +51,6 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
     'checkout',
-    'stripe',
-    'material',
     'djmoney',
 ]
 
@@ -108,7 +106,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'stockmarket',
         'USER': 'postgres',
-        'PASSWORD': '1Dhhdhhghj',
+        'PASSWORD': '123456',
         'HOST': 'localhost',
         'PORT': '5432',
     }
