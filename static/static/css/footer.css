@@ -1,0 +1,39 @@
+footer{
+    background-color: #DCDCDC	;
+    margin-top: 20px;
+}
+.footer-stock {
+    color: red;
+    font-style: italic;
+    font-family: fantasy;
+    font-size: 54px;
+    position: relative;
+    right: 50px;
+}
+.footer-market {
+    color: black;
+    font-style: italic;
+    font-family: fantasy;
+    font-size: 30px;
+}
+.bbb{
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+h2 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 25px;
+}
+.list-text {
+    font-size: 15px;
+}
+.fab {
+    font-size: 25px;
+    margin: 10px;
+    position: relative;
+    right: 65px;
+}
