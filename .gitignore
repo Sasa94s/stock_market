@@ -7,3 +7,5 @@ src/contact/migrations
 src/profiles/__pycache__
 src/profiles/migrations
 src/websitefinal/__pycache__
+*.pyc
+*.pyc

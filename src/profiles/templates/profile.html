@@ -9,48 +9,76 @@
 
 <!-- Content-->
 {% block content %}
-    <div class="col-md-12 col-sm-offset-0">
-        <h1>{% trans "Profile" %}</h1>
-        {% if not user.user.photo %}
-            <img src="{% static 'img/default.png' %}" width="250" class='img-responsive'/>
-        {% else %}
-            <img src="{{ user.user.photo.url }}" width="250" class='img-responsive'>
-        {% endif %}
-        Credit: {{ user.user.Credit }} <br>
-        Username: {{ user.username }} <br>
-        Email: {{ user.email }} <br>
-        Date Joined: {{ user.date_joined }}<br>
-        Bio: {{ user.user.bio }} <br>
-        Phone: {{ user.user.phone }}<br>
-        website: {{ user.user.website }}<br>
-        city: {{ user.user.city }}<br>
-        country: {{ user.user.country }}<br>
-        organization: {{ user.user.organization }}<br>
-
-
-        {% for emailaddress in user.emailaddress_set.all %}
-            <!-- If statment-->
-            Status: {% if emailaddress.verified %}
-            <span class="verified">{% trans "Verified" %}</span>
-        {% else %}
-            <span class="unverified">{% trans "Unverified" %}</span>
-            <button onclick="window.location.href='{% url 'account_email' %}'">Resend verification</button>
-        {% endif %} {% endfor %} <br>
-        {% for emailaddress in user.emailaddress_set.all %}
-            {% if user.has_usable_password %}
-                <button onclick="window.location.href='{% url 'account_change_password' %}'">Change Password</button>
-                <button onclick="window.location.href='{% url 'account_reset_password' %}'">Reset Password</button>
-            {% else %}
-                <button onclick="window.location.href='{% url 'account_set_password' %}'">Set Password</button>
-            {% endif %}
-        {% endfor %}
-        <br>
-        <button onclick="window.location.href='{% url 'account_update' %}'">Edit Profile</button>
-
-
-        <br>
+<div class="col-md-12 col-sm-offset-0">
+    <h1>{% trans "Profile" %}</h1>
+    {% if not user.user.photo %}
+    <img src="{% static 'img/default.png' %}" width="250" class='img-responsive' /> {% else %}
+    <img src="{{ user.user.photo.url }}" width="250" class='img-responsive'> {% endif %}
+    <br>
+    <table class=" table-hover table-sm tb ">
+        <tbody>
+            <tr>
+                <th> Credit:</th>
+                <td> {{ user.user.Credit }}</td>
+            </tr>
+            <tr>
+                <th>Username:</th>
+                <td>{{ user.username }}</td>
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <td>{{ user.date_joined }}</td>
+            </tr>
+            <tr>
+                <th> Date Joined:</th>
+                <td> {{ user.date_joined }}</td>
+            </tr>
+            <tr>
+                <th> Bio:</th>
+                <td> {{ user.user.bio }}</td>
+            </tr>
+            <tr>
+                <th> phone:</th>
+                <td> {{ user.user.phone }} </td>
+            </tr>
+            <tr>
+                <th> website:</th>
+                <td> {{ user.user.website }}</td>
+            </tr>
+            <tr>
+                <th> city:</th>
+                <td> {{ user.user.city }}</td>
+            </tr>
+            <tr>
+                <th> country:</th>
+                <td>{{ user.user.country }}</td>
+            </tr>
+            <tr>
+                <th> organization:</th>
+                <td> {{ user.user.organization }}</td>
+            </tr>
+        </tbody>
+    </table>
+    {% for emailaddress in user.emailaddress_set.all %}
+    <!-- If statment-->
+    Status: {% if emailaddress.verified %}
+    <span class="verified">{% trans "Verified" %}</span>
+    {% else %}
+    <span class="unverified">{% trans "Unverified" %}</span>
+    <button onclick="window.location.href='{% url 'account_email' %}'">Resend verification</button>
+    {% endif %} {% endfor %}
+    <br> {% for emailaddress in user.emailaddress_set.all %} {% if user.has_usable_password %}
+    <button onclick="window.location.href='{% url 'account_change_password' %}'">Change Password</button>
+    <button onclick="window.location.href='{% url 'account_reset_password' %}'">Reset Password</button>
+    {% else %}
+    <button onclick="window.location.href='{% url 'account_set_password' %}'">Set Password</button>
+    {% endif %} {% endfor %}
+    <br>
+    <div>
+        <button onclick="window.location.href='{% url 'account_update' %}'" class="butt">Edit Profile</button>
         <button onclick="window.location.href='{% url 'account_logout' %}'">SignOut</button>
     </div>
+</div>
 
-
+    
 {% endblock %}
