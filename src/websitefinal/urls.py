@@ -13,15 +13,14 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from checkout import views as checkout_views
+from contact import views as contact_views
+from dataVisualization import views as data_visual
 from django.conf import settings
 from django.conf.urls import include
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
-
-from checkout import views as checkout_views
-from contact import views as contact_views
-from dataVisualization import views as data_visual
 from profiles import views
 from profiles import views as profiles_views
 
@@ -36,6 +35,14 @@ urlpatterns = [
     path('checkout/', checkout_views.checkout, name='checkout'),
     path('accounts/', include('allauth.urls')),
     path('profile/edit/', views.edit_user, name='account_update'),
+    path('diagrams/amazon', data_visual.AMZN, name='amazon'),
+    path('diagrams/apple', data_visual.APPL, name='apple'),
+    path('diagrams/alibaba', data_visual.BABA, name='alibaba'),
+    path('diagrams/bitcoin', data_visual.BTC_USD, name='bitcoin'),
+    path('diagrams/facebook', data_visual.FB, name='facebook'),
+    path('diagrams/microsoft', data_visual.MSFT, name='microsoft'),
+    path('diagrams/samsung', data_visual.SSNLF, name='samsung'),
+    path('diagrams/twitter', data_visual.TWTR, name='twitter'),
 
 ]
 
