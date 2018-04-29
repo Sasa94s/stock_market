@@ -2,6 +2,16 @@
 {% extends 'base.html' %}
 {% load static %}
 
+<!-- URLs variables-->
+{% url 'amazon' as amazon %}
+{% url 'apple' as apple %}
+{% url 'alibaba' as alibaba %}
+{% url 'bitcoin' as bitcoin %}
+{% url 'facebook' as facebook %}
+{% url 'microsoft' as microsoft %}
+{% url 'samsung' as samsung %}
+{% url 'twitter' as twitter %}
+
 
 <!-- Content-->
 {% block content %}
@@ -21,6 +31,53 @@
     <!-- Bootstrap core CSS -->
       <script src='{% static "javascript/bootstrap.bundle.min.js" %}' }></script>
 
+                        <!-- Items -->
+                        <li class="nav-item">
+                            <h3>
+                                <span data-feather="home"></span>
+                                Companies <span class="sr-only">(current)</span>
+                            </h3>
+
+                            <a class="nav-link active" href="{% url "amazon" %}">
+                                <span data-feather="home"></span>
+                                Amazon <span class="sr-only">(current)</span>
+                            </a>
+
+                            <a class="nav-link active" href="{% url "apple" %}">
+                                <span data-feather="home"></span>
+                                Apple <span class="sr-only">(current)</span>
+                            </a>
+
+                            <a class="nav-link active" href="{% url "alibaba" %}">
+                                <span data-feather="home"></span>
+                                Alibaba <span class="sr-only">(current)</span>
+                            </a>
+
+                            <a class="nav-link active" href="{% url "bitcoin" %}">
+                                <span data-feather="home"></span>
+                                Bitcoin <span class="sr-only">(current)</span>
+                            </a>
+
+                            <a class="nav-link active" href="{% url "facebook" %}">
+                                <span data-feather="home"></span>
+                                Facebook <span class="sr-only">(current)</span>
+                            </a>
+
+                            <a class="nav-link active" href="{% url "microsoft" %}">
+                                <span data-feather="home"></span>
+                                Microsoft <span class="sr-only">(current)</span>
+                            </a>
+
+                            <a class="nav-link active" href="{% url "samsung" %}">
+                                <span data-feather="home"></span>
+                                Samsung <span class="sr-only">(current)</span>
+                            </a>
+
+                            <a class="nav-link active" href="{% url "twitter" %}">
+                                <span data-feather="home"></span>
+                                Twitter <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
 
     <!-- Custom styles for this template -->
     <script src='{% static "css/dashboard.css" %}' }></script>
@@ -79,7 +136,11 @@
                 </a>
               </li>
             </ul>
+            <!-- Dashboard body-->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
 
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Dashboard</h1>
             <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
               <span>Saved reports</span>
               <a class="d-flex align-items-center text-muted" href="#">
@@ -262,6 +323,20 @@
           </div>
         </main>
       </div>
+                <!-- Diagrams part-->
+                <div class="row">
+                    <div class="col-md-9">
+
+                        <!-- Company Diagram snippet-->
+                        {% block Company %}
+
+                        {% endblock Company %}
+                    </div>
+                </div>
+
+            </main>
+
+        </div>
     </div>
 
     <!-- Bootstrap core JavaScript
