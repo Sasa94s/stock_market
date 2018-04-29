@@ -1,47 +1,50 @@
 
 .dropdown-menu {
-  min-width: 300px;
+    min-width: 300px;
 }
 
 .theme-showcase > p > .btn {
-  margin: 5px 0;
+    margin: 5px 0;
 }
 
 .theme-showcase .navbar .container {
-  width: auto;
+    width: auto;
 }
 
+h1 {
+    color: #4f45ff;
+}
 
-h1 {color: #4f45ff;}
-h3 {color: rgb(120, 72, 205)}
-
+h3 {
+    color: rgb(120, 72, 205)
+}
 
 body {
-    padding-top: 70px;
-    padding-bottom: 30px;
-    background-color:#ddddbb ;
-    background-image: url('../img/home.jpeg');
-    -webkit-border-image: url('../img/home.jpeg')
+    /*padding-top: 70px;*/
+    /*padding-bottom: 30px;*/
+    background-color: rgba(0, 53, 255, 0.06);
+
 }
 
-.probu{
-   
+.probu {
+
 }
-.signbu{
+
+.signbu {
 
     margin-bottom: 1000px;
 }
 
-h1{
+h1 {
     color: black;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     border: white;
-border-bottom-style:double;
-border-bottom-width: medium;
+    border-bottom-style: double;
+    border-bottom-width: medium;
 }
 
-.one{
+.one {
     color: blue;
     font-size: medium;
     font-weight: bold;
@@ -50,6 +53,6 @@ border-bottom-width: medium;
 
 .col-md-12 {
     width: 100%;
-    
+
 }
 
