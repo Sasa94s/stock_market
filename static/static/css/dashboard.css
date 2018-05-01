@@ -84,10 +84,23 @@ body {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
 }
+#container {
+  position: relative;
+}
+#container canvas, #overlay {
+  position: absolute;
+}
+canvas {
+  border: 1px solid black;
+}
 
+.hide {
+  display: none;
+}
 /*
  * Utilities
  */
+
 
 .border-top { border-top: 1px solid #e5e5e5; }
 .border-bottom { border-bottom: 1px solid #e5e5e5; }

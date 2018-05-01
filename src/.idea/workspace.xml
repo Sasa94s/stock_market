@@ -3,8 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="db85bd05-068e-4238-b3c0-9c0c886efa60" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/alibaba.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/alibaba.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/amazon.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/amazon.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/apple.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/apple.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/bitcoin.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/bitcoin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/facebook.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/facebook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/microsoft.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/microsoft.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/samsung.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/samsung.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/twitter.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/twitter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataVisualization/templates/Comparison of Calibration of Classifiers in Scikit-learn.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/Comparison of Calibration of Classifiers in Scikit-learn.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataVisualization/templates/diagrams.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/diagrams.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profiles/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/templates/account/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/templates/account/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/templates/includes/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/templates/includes/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../static/static/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/../static/static/css/dashboard.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,38 +47,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/websitefinal/settings.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataVisualization/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+            <state relative-caret-position="510">
+              <caret line="30" column="42" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/profiles/templates/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="diagrams.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dataVisualization/templates/diagrams.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5185">
-              <caret line="305" column="20" selection-start-line="305" selection-start-column="20" selection-end-line="305" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../static/static/css/dashboard.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+            <state relative-caret-position="68">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -84,11 +78,17 @@
       <find>img</find>
       <find>hell</find>
       <find>hello</find>
-      <find />
+      <find>Theme template foor Bootstrap</find>
       <find>style</find>
       <find>nav</find>
-      <find>das</find>
+      <find>ord</find>
+      <find>bar-chart-2</find>
+      <find>comp</find>
+      <find>can</find>
       <find>dash</find>
+      <find>ca</find>
+      <find>das</find>
+      <find>compa</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -107,7 +107,6 @@
         <option value="$PROJECT_DIR$/contact/views.py" />
         <option value="$PROJECT_DIR$/profiles/templates/navbar.html" />
         <option value="$PROJECT_DIR$/profiles/templates/account/password_change.html" />
-        <option value="$PROJECT_DIR$/profiles/templates/account/login.html" />
         <option value="$PROJECT_DIR$/profiles/templates/account/password_reset.html" />
         <option value="$PROJECT_DIR$/profiles/templates/socialaccount/snippets/provider_list.html" />
         <option value="$PROJECT_DIR$/profiles/templates/account/password_set.html" />
@@ -126,15 +125,25 @@
         <option value="$PROJECT_DIR$/profiles/templates/includes/script.html" />
         <option value="$PROJECT_DIR$/profiles/templates/includes/head.html" />
         <option value="$PROJECT_DIR$/../static/static/css/theme.css" />
-        <option value="$PROJECT_DIR$/profiles/templates/includes/navbar.html" />
         <option value="$PROJECT_DIR$/websitefinal/settings.py" />
         <option value="$PROJECT_DIR$/analysis/README.md" />
         <option value="$PROJECT_DIR$/../static/static/css/main.css" />
-        <option value="$PROJECT_DIR$/../static/static/css/dashboard.css" />
         <option value="E:/plot/Comparison of Calibration of Classifiers in Scikit-learn.html" />
+        <option value="$PROJECT_DIR$/profiles/templates/account/login.html" />
+        <option value="$PROJECT_DIR$/../static/static/css/dashboard.css" />
+        <option value="$PROJECT_DIR$/profiles/templates/includes/navbar.html" />
         <option value="$PROJECT_DIR$/dataVisualization/templates/Comparison of Calibration of Classifiers in Scikit-learn.html" />
-        <option value="$PROJECT_DIR$/profiles/templates/about.html" />
+        <option value="$PROJECT_DIR$/dataVisualization/templates/samsung.html" />
         <option value="$PROJECT_DIR$/dataVisualization/templates/diagrams.html" />
+        <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/samsung.html" />
+        <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/twitter.html" />
+        <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/alibaba.html" />
+        <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/amazon.html" />
+        <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/apple.html" />
+        <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/bitcoin.html" />
+        <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/facebook.html" />
+        <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/microsoft.html" />
+        <option value="$PROJECT_DIR$/profiles/templates/about.html" />
       </list>
     </option>
   </component>
@@ -144,7 +153,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="16" />
     <option name="y" value="175" />
     <option name="width" value="1346" />
@@ -156,6 +165,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,13 +176,18 @@
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dataVisualization" type="462c0819:PsiDirectoryNode" />
+              <item name="analysis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dataVisualization" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="contact" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
@@ -184,6 +199,20 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="profiles" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="profiles" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="account" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="profiles" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
@@ -215,7 +244,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -232,17 +260,18 @@
     </option>
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\graduation project\stock_market\src\dataVisualization\templates\CompaniesTemplates" />
+      <recent name="E:\graduation project\stock-market\static\media" />
+      <recent name="E:\graduation project\stock-market\static\static\img" />
+      <recent name="E:\graduation project\stock-market\static\media\profile_image" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\graduation project\stock_market\src\dataVisualization\templates" />
       <recent name="E:\graduation project\stock_market\static" />
       <recent name="E:\graduation project\stock_market\static\static\javascript" />
       <recent name="E:\graduation project\stock_market\static\static\css" />
       <recent name="E:\graduation project\stock_market\src\dataVisualization\templates\includes" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\graduation project\stock-market\static\media" />
-      <recent name="E:\graduation project\stock-market\static\static\img" />
-      <recent name="E:\graduation project\stock-market\static\media\profile_image" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -337,46 +366,46 @@
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.56397057" side_tool="true" weight="0.24413146" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4360294" weight="0.24413146" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.3618677" weight="0.3279743" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32906404" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.46732524" weight="0.24919614" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35367647" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4360294" visible="true" weight="0.24350649" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.46732524" weight="0.24837662" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22492401" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.3294423" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32792208" />
       <window_info anchor="right" id="SciView" order="4" weight="0.3294423" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39871383" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39871383" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3279743" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4369301" weight="0.244373" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26139817" />
-      <window_info anchor="right" id="SciView" order="4" weight="0.3294423" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" sideWeight="0.3618677" weight="0.32906404" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3279743" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26139817" />
       <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" sideWeight="0.3618677" weight="0.32906404" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4369301" weight="0.244373" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3279743" />
       <window_info anchor="right" id="Database" order="3" weight="0.3294423" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.25024632" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5630699" side_tool="true" weight="0.244373" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.3294423" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32906404" />
     </layout-to-restore>
   </component>
@@ -400,7 +429,41 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../static/static-only/css/bootstrap-theme.min.css" />
+    <entry file="file://$PROJECT_DIR$/websitefinal/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/templates/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/templates/account/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/diagrams.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5185">
+          <caret line="305" column="20" selection-start-line="305" selection-start-column="20" selection-end-line="305" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../static/static/css/dashboard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../static/static-only/css/bootstrap.min.css" />
     <entry file="file://$PROJECT_DIR$/../static/static-only/css/theme.css" />
     <entry file="file://$PROJECT_DIR$/../static/static/javascript/docs.min.js">
@@ -420,25 +483,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/websitefinal/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websitefinal/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/configartion.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-39" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websitefinal/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../static/static-only/css/main.css" />
@@ -448,21 +495,6 @@
           <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkout/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkout/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkout/admin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkout/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkout/views.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/profiles/views.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -477,9 +509,6 @@
           <caret line="1" column="43" selection-start-line="1" selection-start-column="43" selection-end-line="1" selection-end-column="43" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/profiles/admin.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -502,13 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../static/static/css/bootstrap.min.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../static/static/javascript/bootstrap.min.js" />
     <entry file="file://$PROJECT_DIR$/../static/static/css/bootstrap-theme.min.css" />
     <entry file="file://$PROJECT_DIR$/../static/static/css/bootstrap.min.css">
@@ -519,9 +541,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../static/static/javascript/popper.min.js" />
-    <entry file="file://$PROJECT_DIR$/../static/static/javascript/bootstrap.bundle.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/profiles/templates/includes/head.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -529,37 +548,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/includes/companiesHeaders.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/templates/includes/navbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/includes/MOVING_AVERAGE.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/analysis/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="35" selection-start-line="35" selection-end-line="35" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/websitefinal/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/includes/companiesHeaders.html" />
     <entry file="file://C:/Python/Python36/Lib/site-packages/django/templatetags/static.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1173">
@@ -569,28 +558,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../static/static/javascript/Chart.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../static/static/javascript/jquery-3.2.1.slim.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/profiles/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../static/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../static/static/css/theme.css">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/profiles/templates/includes/script.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -599,16 +572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../static/profile.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://E:/plot/Comparison of Calibration of Classifiers in Scikit-learn.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -616,29 +579,160 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/Comparison of Calibration of Classifiers in Scikit-learn.html">
+    <entry file="file://$PROJECT_DIR$/../static/static/javascript/feather.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-765" />
+        <state relative-caret-position="486">
+          <caret line="5" column="15406" selection-start-line="5" selection-start-column="15395" selection-end-line="5" selection-end-column="15406" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/templates/about.html">
+    <entry file="file://E:/plot/DjangoPlotLy-master/site1/app1/plots.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analysis/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        <state relative-caret-position="472">
+          <caret line="35" column="108" selection-start-line="35" selection-end-line="35" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/templates/account/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websitefinal/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1819">
+          <caret line="107" column="28" selection-start-line="107" selection-start-column="17" selection-end-line="107" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python/Python36/Lib/site-packages/allauth/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../static/static/css/dashboard.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+        <state relative-caret-position="1598">
+          <caret line="94" column="1" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/Comparison of Calibration of Classifiers in Scikit-learn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websitefinal/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../static/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/templates/includes/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataVisualization/templates/diagrams.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5185">
-          <caret line="305" column="20" selection-start-line="305" selection-start-column="20" selection-end-line="305" selection-end-column="20" />
+        <state relative-caret-position="510">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/microsoft.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/facebook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/bitcoin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/twitter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/samsung.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/alibaba.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/amazon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/apple.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="42" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/templates/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>

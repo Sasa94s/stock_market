@@ -1,50 +1,7 @@
 <!-- Inheret the base template-->
-{% extends 'base.html' %} {% block content %}
-    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
     <h1>Hello about</h1>
-
-
-
-
-    <div class="buttons">
-{#        <a id="showall">All</a>#}
-        <a class="showSingle" target="1">Div 1</a>
-        <a class="showSingle" target="2">Div 2</a>
-        <a class="showSingle" target="3">Div 3</a>
-        <a class="showSingle" target="4">Div 4</a>
-    </div>
-
-    <div id="div1" class="targetDiv">Lorum Ipsum1</div>
-    <div id="div2" class="targetDiv">Lorum Ipsum2</div>
-    <div id="div3" class="targetDiv">Lorum Ipsum3</div>
-    <div id="div4" class="targetDiv" >
-    {% include 'Comparison of Calibration of Classifiers in Scikit-learn.html' %}
-    </div>
-
-    <script>
-
-        function readyFn($)
-        {
-            // Code to run when the document is ready.
-            $(function () {
-
-                $('#showall').click(function () {
-                    $('.targetDiv').show();
-                });
-                $('.showSingle').click(function () {
-                    $('.targetDiv').hide();
-                    $('#div' + $(this).attr('target')).show();
-                });
-            });
-        }
-
-        $(document).ready(readyFn);
-        $( window ).load(function() {
-            var targets = $('.targetDiv');
-                targets.hide();
-                targets.eq(0).show();
-    });
-    </script>
-
-
 {% endblock %}
