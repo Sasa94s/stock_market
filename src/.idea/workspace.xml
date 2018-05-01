@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db85bd05-068e-4238-b3c0-9c0c886efa60" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/alibaba.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/alibaba.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/amazon.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/amazon.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/apple.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/apple.html" afterDir="false" />
@@ -11,12 +10,6 @@
       <change beforePath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/microsoft.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/microsoft.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/samsung.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/samsung.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/twitter.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/twitter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataVisualization/templates/Comparison of Calibration of Classifiers in Scikit-learn.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/Comparison of Calibration of Classifiers in Scikit-learn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataVisualization/templates/diagrams.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/diagrams.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles/templates/account/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/templates/account/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profiles/templates/includes/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/templates/includes/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../static/static/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/../static/static/css/dashboard.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -56,11 +49,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/profiles/templates/about.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="facebook.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/facebook.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="microsoft.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/microsoft.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -78,7 +89,7 @@
       <find>img</find>
       <find>hell</find>
       <find>hello</find>
-      <find>Theme template foor Bootstrap</find>
+      <find />
       <find>style</find>
       <find>nav</find>
       <find>ord</find>
@@ -135,6 +146,7 @@
         <option value="$PROJECT_DIR$/dataVisualization/templates/Comparison of Calibration of Classifiers in Scikit-learn.html" />
         <option value="$PROJECT_DIR$/dataVisualization/templates/samsung.html" />
         <option value="$PROJECT_DIR$/dataVisualization/templates/diagrams.html" />
+        <option value="$PROJECT_DIR$/profiles/templates/about.html" />
         <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/samsung.html" />
         <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/twitter.html" />
         <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/alibaba.html" />
@@ -143,7 +155,6 @@
         <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/bitcoin.html" />
         <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/facebook.html" />
         <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/microsoft.html" />
-        <option value="$PROJECT_DIR$/profiles/templates/about.html" />
       </list>
     </option>
   </component>
@@ -153,7 +164,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="16" />
     <option name="y" value="175" />
     <option name="width" value="1346" />
@@ -188,6 +199,24 @@
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="contact" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dataVisualization" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dataVisualization" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dataVisualization" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="CompaniesTemplates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
@@ -666,62 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/microsoft.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/facebook.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/bitcoin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/twitter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/samsung.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/alibaba.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/amazon.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/apple.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataVisualization/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -729,10 +702,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/samsung.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="54" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/twitter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/alibaba.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/amazon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/apple.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/bitcoin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/profiles/templates/about.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/microsoft.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/facebook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
         </state>
       </provider>
     </entry>
