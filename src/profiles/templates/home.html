@@ -6,6 +6,7 @@
 
 <!-- Content-->
 {% block content %}
+     <title>Stock Market</title>
     <div class="row">
 
         <style>
@@ -70,6 +71,108 @@
                 </form>
             {% endif %}
         </div>
+    </div>
+
+<!-- Tables-->
+
+        <h2>Section title</h2>
+    <div class="table-responsive">
+        <table class="table table-striped table-sm">
+            <thead>
+            <tr>
+                <th>Company Name</th>
+                <th>date</th>
+                <th>open</th>
+                <th>close</th>
+                <th>high</th>
+                <th>low</th>
+                <th>adjusted close</th>
+                <th>volume</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><a class="dropdown-item" href="{% url 'alibaba' %}">Ali baba</a></td>
+                <td>Lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+            </tr>
+            <tr>
+                <td><a class="dropdown-item" href="{% url 'amazon' %}">Amazon</a></td>
+                <td>Lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+            </tr>
+            <tr>
+                <td><a class="dropdown-item" href="{% url 'apple' %}">Apple</a></td>
+                <td>Lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+            </tr>
+           <tr>
+                <td><a class="dropdown-item" href="{% url 'bitcoin' %}">Bitcoin</a></td>
+                <td>Lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+            </tr>
+            <tr>
+                <td><a class="dropdown-item" href="{% url 'facebook' %}">Facebook</a></td>
+                <td>Lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+            </tr>
+            <tr>
+                <td><a class="dropdown-item" href="{% url 'microsoft' %}">Microsoft</a></td>
+                <td>Lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+            </tr>
+            <tr>
+                <td><a class="dropdown-item" href="{% url 'samsung' %}">Samsung</a></td>
+                <td>Lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+            </tr>
+            <tr>
+                <td><a class="dropdown-item" href="{% url 'twitter' %}">Twitter</a></td>
+                <td>Lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 
 {% endblock content %}
