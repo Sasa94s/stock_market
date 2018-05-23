@@ -1,22 +1,37 @@
 {% extends 'diagrams.html' %}
 {% block coName %}
     <h1 class="h2">Bitcoin</h1>
-    <div class="btn-toolbar mb-2 mb-md-0">
-        <div class="btn-group mr-2">
-            <button class="showSingle btn btn-sm btn-outline-secondary" target="1">plot 1</button>
-            <button class="showSingle btn btn-sm btn-outline-secondary" target="2">plot 2</button>
-            <button class="showSingle btn btn-sm btn-outline-secondary" target="3">plot 3</button>
-            <button class="showSingle btn btn-sm btn-outline-secondary" target="4">plot 4</button>
-        </div>
-    </div>
 {% endblock coName %}
 {% block plot %}
-    <div class="my-4">
-        <div id="div1" class="targetDiv ">plot 1</div>
-        <div id="div2" class="targetDiv ">plot 2</div>
-        <div id="div3" class="targetDiv ">plot 3</div>
-        <div id="div4" class="targetDiv ">plot 4</div>
-    </div>
+            <!-- Nav pills -->
+            <ul class="nav nav-pills" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="pill" href="#home">Plot 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#menu1">Plot 2 </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#menu2">Plot 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="pill" href="#menu3">Plot 4 </a>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="home" class="container tab-pane active"><br>
+                        {% include "Comparison of Calibration of Classifiers in Scikit-learn.html" %}
+                    </div>
+    
+                    <div id="menu1" class="container tab-pane fade"><br>
+                    </div>
+                    <div id="menu2" class="container tab-pane fade"><br>
+                
+                        </div>
+                        <div id="menu3" class="container tab-pane fade"><br>
+                        </div>
+                    </div>
 {% endblock plot %}
 {% block table %}
     <h2>Section title</h2>

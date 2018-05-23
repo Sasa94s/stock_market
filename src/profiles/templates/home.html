@@ -6,70 +6,223 @@
 
 <!-- Content-->
 {% block content %}
-    <div class="row">
 
-        <style>
-            .jumbotron {
-                text-align: center;
-            }
-        </style>
+<div class="container">
+    <title>Stock Market</title>
 
-        <!-- Main jumbotron for a primary marketing message or call to action -->
-        <div class="jumbotron">
-            <h1>Theme example</h1>
-            <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting
-                point to create something more unique by building on or modifying it.</p>
-        </div>
-
-        <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
-                euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-        </div>
-        <div class="col-md-4">
-            <a href="#">
-                <img class="img-fluid" src="{% static 'img/home.jpeg' %}"/>
-            </a>
-        </div>
-        <div class="col-md-4">
-            {% if request.user.is_authenticated %}
-                <h3>Hello {{ request.user }}</h3>
-            {% else %}
-
-                <form class="login" method="POST" action="{% url 'account_login' %}">
-                    {% csrf_token %}
-
-                    <div id="div_id_login" class="form-group"><label for="id_login"
-                                                                     class="control-label  requiredField">
-                        Login<span class="asteriskField">*</span> </label>
-                        <div class="controls "><input type="text" name="login" placeholder="Username or e-mail"
-                                                      autofocus="autofocus" class="textinput textInput form-control"
-                                                      required="" id="id_login"></div>
-                    </div>
-                    <div id="div_id_password" class="form-group"><label for="id_password"
-                                                                        class="control-label  requiredField">
-                        Password<span class="asteriskField">*</span> </label>
-                        <div class="controls "><input type="password" name="password" placeholder="Password"
-                                                      class="textinput textInput form-control" required=""
-                                                      id="id_password"></div>
-                    </div>
-                    <div class="form-group">
-                        <div id="div_id_remember" class="checkbox"><label for="id_remember" class=""> <input
-                                type="checkbox" name="remember" class="checkboxinput" id="id_remember">
-                            Remember Me
-                        </label></div>
-                    </div>
-
-
-                    <a class="btn btn-link button secondaryAction" href="{% url 'account_reset_password' %}">Forgot
-                        Password?</a>
-                    <a class="btn btn-link button secondaryAction" href="{% url 'account_signup' %}">Sign Up</a>
-                    <button class=" btn btn-default primaryAction" type="submit">Sign In</button>
-                </form>
-            {% endif %}
+    <!-- Start of Carousel Slide -->
+    <div id="demo" class="carousel slide slider margin " data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'img/home.jpeg' %}" alt="Los Angeles" width="100%" height="600">
+                <div class="carousel-caption">
+                    <h1> Stock Market </h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'img/home.jpeg' %}" alt="Chicago" width="100%" height="600">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'img/home.jpeg' %}" alt="New York" width="100%" height="600">
+            </div>
         </div>
     </div>
+</div>
+<!-- End of Carousel Slide -->
+<div class="row">
+    <style>
+        .jumbotron {
+            text-align: center;
+        }
+    </style>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <h1>Theme example</h1>
+        <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to
+            create something more unique by building on or modifying it.</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+            nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio
+            dui. </p>
+        <p>
+            <a class="btn btn-default" href="#" role="button">View details »</a>
+        </p>
+    </div>
+    <div class="col-md-4">
+        <a href="#">
+            <img class="img-fluid" src="{% static 'img/home.jpeg' %}" />
+        </a>
+    </div>
+    <div class="col-md-4">
+        {% if request.user.is_authenticated %}
+        <h3>Hello {{ request.user }}</h3>
+        {% else %}
+
+        <form class="login" method="POST" action="{% url 'account_login' %}">
+            {% csrf_token %}
+
+            <div id="div_id_login" class="form-group">
+                <label for="id_login" class="control-label  requiredField">
+                    Login
+                    <span class="asteriskField">*</span>
+                </label>
+                <div class="controls ">
+                    <input type="text" name="login" placeholder="Username or e-mail" autofocus="autofocus" class="textinput textInput form-control"
+                        required="" id="id_login">
+                </div>
+            </div>
+            <div id="div_id_password" class="form-group">
+                <label for="id_password" class="control-label  requiredField">
+                    Password
+                    <span class="asteriskField">*</span>
+                </label>
+                <div class="controls ">
+                    <input type="password" name="password" placeholder="Password" class="textinput textInput form-control" required=""
+                        id="id_password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div id="div_id_remember" class="checkbox">
+                    <label for="id_remember" class="">
+                        <input type="checkbox" name="remember" class="checkboxinput" id="id_remember"> Remember Me
+                    </label>
+                </div>
+            </div>
+            <a class="btn btn-link button secondaryAction" href="{% url 'account_reset_password' %}">Forgot Password?
+            </a>
+            <a class="btn btn-link button secondaryAction" href="{% url 'account_signup' %}">Sign Up</a>
+            <button class=" btn btn-default primaryAction" type="submit">Sign In</button>
+        </form>
+        {% endif %}
+    </div>
+</div>
+<!-- Tables-->
+<h2>Section title</h2>
+<div class="table-responsive">
+    <table class="table table-striped table-sm">
+        <thead>
+            <tr>
+                <th>Company Name</th>
+                <th>date</th>
+                <th>open</th>
+                <th>close</th>
+                <th>high</th>
+                <th>low</th>
+                <th>adjusted close</th>
+                <th>volume</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <a class="dropdown-item" href="{% url 'alibaba' %}">Ali baba</a>
+                </td>
+                <td>Lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+            </tr>
+            <tr>
+                <td>
+                    <a class="dropdown-item" href="{% url 'amazon' %}">Amazon</a>
+                </td>
+                <td>Lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+            </tr>
+            <tr>
+                <td>
+                    <a class="dropdown-item" href="{% url 'apple' %}">Apple</a>
+                </td>
+                <td>Lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+            </tr>
+            <tr>
+                <td>
+                    <a class="dropdown-item" href="{% url 'bitcoin' %}">Bitcoin</a>
+                </td>
+                <td>Lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+            </tr>
+            <tr>
+                <td>
+                    <a class="dropdown-item" href="{% url 'facebook' %}">Facebook</a>
+                </td>
+                <td>Lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+            </tr>
+            <tr>
+                <td>
+                    <a class="dropdown-item" href="{% url 'microsoft' %}">Microsoft</a>
+                </td>
+                <td>Lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+            </tr>
+            <tr>
+                <td>
+                    <a class="dropdown-item" href="{% url 'samsung' %}">Samsung</a>
+                </td>
+                <td>Lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+            </tr>
+            <tr>
+                <td>
+                    <a class="dropdown-item" href="{% url 'twitter' %}">Twitter</a>
+                </td>
+                <td>Lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+
+
 
 {% endblock content %}
