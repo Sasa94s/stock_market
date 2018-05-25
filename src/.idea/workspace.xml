@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db85bd05-068e-4238-b3c0-9c0c886efa60" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/alibaba.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/alibaba.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/amazon.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/amazon.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/apple.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/apple.html" afterDir="false" />
@@ -10,6 +11,9 @@
       <change beforePath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/microsoft.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/microsoft.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/samsung.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/samsung.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/twitter.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/twitter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataVisualization/templates/diagrams.html" beforeDir="false" afterPath="$PROJECT_DIR$/dataVisualization/templates/diagrams.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/templates/includes/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/templates/includes/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles/templates/includes/script.html" beforeDir="false" afterPath="$PROJECT_DIR$/profiles/templates/includes/script.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,29 +44,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataVisualization/views.py">
+      <file leaf-file-name="alibaba.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/alibaba.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="42" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="42" />
+            <state relative-caret-position="384">
+              <caret line="146" column="20" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/profiles/templates/about.html">
+      <file leaf-file-name="amazon.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/amazon.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="384">
+              <caret line="147" column="20" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facebook.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="apple.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/apple.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="147" column="20" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bitcoin.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/bitcoin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="146" column="20" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="facebook.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/facebook.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+            <state relative-caret-position="384">
+              <caret line="146" column="20" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -70,8 +92,26 @@
       <file leaf-file-name="microsoft.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/microsoft.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+            <state relative-caret-position="384">
+              <caret line="146" column="20" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="samsung.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/samsung.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="149" column="20" selection-start-line="149" selection-start-column="20" selection-end-line="149" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="twitter.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/twitter.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="146" column="20" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -133,7 +173,6 @@
         <option value="$PROJECT_DIR$/profiles/admin.py" />
         <option value="$PROJECT_DIR$/websitefinal/urls.py" />
         <option value="$PROJECT_DIR$/../static/static-only/css/main.css" />
-        <option value="$PROJECT_DIR$/profiles/templates/includes/script.html" />
         <option value="$PROJECT_DIR$/profiles/templates/includes/head.html" />
         <option value="$PROJECT_DIR$/../static/static/css/theme.css" />
         <option value="$PROJECT_DIR$/websitefinal/settings.py" />
@@ -142,19 +181,20 @@
         <option value="E:/plot/Comparison of Calibration of Classifiers in Scikit-learn.html" />
         <option value="$PROJECT_DIR$/profiles/templates/account/login.html" />
         <option value="$PROJECT_DIR$/../static/static/css/dashboard.css" />
-        <option value="$PROJECT_DIR$/profiles/templates/includes/navbar.html" />
         <option value="$PROJECT_DIR$/dataVisualization/templates/Comparison of Calibration of Classifiers in Scikit-learn.html" />
         <option value="$PROJECT_DIR$/dataVisualization/templates/samsung.html" />
-        <option value="$PROJECT_DIR$/dataVisualization/templates/diagrams.html" />
         <option value="$PROJECT_DIR$/profiles/templates/about.html" />
-        <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/samsung.html" />
-        <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/twitter.html" />
+        <option value="$PROJECT_DIR$/profiles/templates/includes/script.html" />
+        <option value="$PROJECT_DIR$/dataVisualization/templates/diagrams.html" />
+        <option value="$PROJECT_DIR$/profiles/templates/includes/navbar.html" />
         <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/alibaba.html" />
         <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/amazon.html" />
         <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/apple.html" />
         <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/bitcoin.html" />
         <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/facebook.html" />
         <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/microsoft.html" />
+        <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/samsung.html" />
+        <option value="$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/twitter.html" />
       </list>
     </option>
   </component>
@@ -164,7 +204,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="16" />
     <option name="y" value="175" />
     <option name="width" value="1346" />
@@ -183,22 +223,6 @@
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="analysis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="analysis" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="contact" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="src" type="b2602c69:ProjectViewProjectNode" />
@@ -262,12 +286,6 @@
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="javascript" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -396,47 +414,39 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.56397057" side_tool="true" weight="0.24413146" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.3618677" weight="0.3279743" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32906404" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.3618677" weight="0.3279743" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32906404" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4360294" visible="true" weight="0.24350649" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.46732524" weight="0.24837662" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22492401" />
-      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.46732524" weight="0.24837662" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23176292" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.3294423" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32792208" />
       <window_info anchor="right" id="SciView" order="4" weight="0.3294423" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39871383" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-    </layout>
-    <layout-to-restore>
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39871383" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26139817" />
-      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22492401" />
+      <window_info anchor="right" id="SciView" order="4" weight="0.3294423" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" sideWeight="0.3618677" weight="0.32906404" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4369301" weight="0.244373" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3279743" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.3618677" weight="0.3279743" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4360294" visible="true" weight="0.24350649" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.3294423" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.25024632" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5630699" side_tool="true" weight="0.244373" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="4" weight="0.3294423" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.56397057" side_tool="true" weight="0.24413146" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32792208" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.46732524" weight="0.24837662" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32906404" />
-    </layout-to-restore>
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -587,20 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/templates/includes/script.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="3" selection-start-line="4" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/plot/Comparison of Calibration of Classifiers in Scikit-learn.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -614,9 +610,6 @@
           <caret line="5" column="15406" selection-start-line="5" selection-start-column="15395" selection-end-line="5" selection-end-column="15406" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://E:/plot/DjangoPlotLy-master/site1/app1/plots.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/analysis/README.md">
       <provider selected="true" editor-type-id="text-editor">
@@ -643,13 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -681,66 +667,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/profiles/templates/includes/navbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="26" column="41" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/diagrams.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dataVisualization/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="42" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/samsung.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="54" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/twitter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/alibaba.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/amazon.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/apple.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/bitcoin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -751,17 +681,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/microsoft.html">
+    <entry file="file://$PROJECT_DIR$/profiles/templates/includes/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+        <state relative-caret-position="119">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/diagrams.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/templates/includes/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="225" selection-start-line="225" selection-end-line="225" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profiles/templates/includes/script.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/alibaba.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="146" column="20" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/amazon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="147" column="20" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/apple.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="147" column="20" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/bitcoin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="146" column="20" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/facebook.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+        <state relative-caret-position="384">
+          <caret line="146" column="20" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/microsoft.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="146" column="20" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/samsung.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="149" column="20" selection-start-line="149" selection-start-column="20" selection-end-line="149" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVisualization/templates/CompaniesTemplates/twitter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="146" column="20" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
         </state>
       </provider>
     </entry>

@@ -1,11 +1,5 @@
 <!-- Load files from static folder-->
 {% load static %}
-
-<!-- Declare variables contain the url name-->
-{% url 'twitter' as twitter %}
-{% url 'samsung' as samsung %}
-{% url 'apple' as apple %}
-{% url 'amazon' as amazon %}
 <!-- split navbar into two term to move dropdown left -->
 <!-- first term of navbar -->
 <nav id="#navbar" class="navbar navbar-dark bg-dark navbar-expand-lg">
@@ -33,10 +27,6 @@
             <li {% if request.path == contact %} class="nav-item active" {% endif %}>
                 <a href="{% url 'contact' %}" class="nav-link">Contact</a>
             </li>
-        <li {% if request.path == contact %} class="nav-item active" {% endif %}>
-                <a href="{% url 'diagrams' %}" class="nav-link">Diagrams</a>
-            </li>
-
             <!-- Admin additional options-->
             {% if user.is_superuser %}
                 <li {% if request.path == contact %} class="nav-item active" {% endif %}>
