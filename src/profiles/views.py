@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.core.exceptions import PermissionDenied
 from django.forms.models import inlineformset_factory
 from django.shortcuts import render, HttpResponseRedirect
+from django.views.generic import TemplateView
 
 from .forms import UserForm
 from .models import UserProfile
@@ -10,16 +11,12 @@ from .models import UserProfile
 
 # Create your views here.
 
-def home(request):
-    context = {}
-    template = 'home.html'
-    return render(request, template, context)
+class home(TemplateView):
+    template_name = 'home.html'
 
 
-def about(request):
-    context = {}
-    template = 'about.html'
-    return render(request, template, context)
+class about(TemplateView):
+    template_name = 'about.html'
 
 
 @login_required

@@ -1,56 +1,37 @@
-from django.shortcuts import render
-
+from django.views.generic import TemplateView
 
 # Create your views here.
-def diagrams(request):
-    context = {}
-    template = 'diagrams.html'
-    return render(request, template, context)
+class Diagrams(TemplateView):
+    template_name = 'diagrams.html'
 
 
-def MSFT(request):
-    context = {}
-    template = 'CompaniesTemplates/microsoft.html'
-    return render(request, template, context)
+class MSFT(TemplateView):
+    template_name = 'CompaniesTemplates/microsoft.html'
 
 
-def TWTR(request):
-    context = {}
-    template = 'CompaniesTemplates/twitter.html'
-    return render(request, template, context)
+class TWTR(TemplateView):
+    template_name = 'CompaniesTemplates/twitter.html'
 
 
-def APPL(request):
-    context = {}
-    template = 'CompaniesTemplates/apple.html'
-    return render(request, template, context)
+class APPL(TemplateView):
+    template_name = 'CompaniesTemplates/apple.html'
 
 
-def SSNLF(request):
-    context = {}
-    template = 'CompaniesTemplates/samsung.html'
-    return render(request, template, context)
+class SSNLF(TemplateView):
+    template_name = 'CompaniesTemplates/samsung.html'
 
 
-def FB(request):
-    context = {}
-    template = 'CompaniesTemplates/facebook.html'
-    return render(request, template, context)
+class FB(TemplateView):
+    template_name = 'CompaniesTemplates/facebook.html'
 
 
-def BABA(request):
-    context = {}
-    template = 'CompaniesTemplates/alibaba.html'
-    return render(request, template, context)
+class BABA(TemplateView):
+    template_name = 'CompaniesTemplates/alibaba.html'
 
 
-def AMZN(request):
-    context = {}
-    template = 'CompaniesTemplates/amazon.html'
-    return render(request, template, context)
+class AMZN(TemplateView):
+    template_name = 'CompaniesTemplates/amazon.html'
 
 
-def BTC_USD(request):
-    context = {}
-    template = 'CompaniesTemplates/bitcoin.html'
-    return render(request, template, context)
+class BTC_USD(TemplateView):
+    template_name = 'CompaniesTemplates/bitcoin.html'
