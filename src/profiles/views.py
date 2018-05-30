@@ -4,7 +4,6 @@ from django.core.exceptions import PermissionDenied
 from django.forms.models import inlineformset_factory
 from django.shortcuts import render, HttpResponseRedirect
 from django.views.generic import TemplateView
-
 from .forms import UserForm
 from .models import UserProfile
 
