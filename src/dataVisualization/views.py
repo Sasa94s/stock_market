@@ -4,34 +4,32 @@ from django.views.generic import TemplateView
 class Diagrams(TemplateView):
     template_name = 'diagrams.html'
 
+class AAPL(TemplateView):
+    template_name = 'CompaniesTemplates/AAPL.html'
 
-class MSFT(TemplateView):
-    template_name = 'CompaniesTemplates/microsoft.html'
-
-
-class TWTR(TemplateView):
-    template_name = 'CompaniesTemplates/twitter.html'
-
-
-class APPL(TemplateView):
-    template_name = 'CompaniesTemplates/apple.html'
-
-
-class SSNLF(TemplateView):
-    template_name = 'CompaniesTemplates/samsung.html'
-
+class AMD(TemplateView):
+    template_name = 'CompaniesTemplates/AMD.html'
 
 class FB(TemplateView):
-    template_name = 'CompaniesTemplates/facebook.html'
+    template_name = 'CompaniesTemplates/FB.html'
 
+class GOOG(TemplateView):
+    template_name = 'CompaniesTemplates/GOOG.html'
 
-class BABA(TemplateView):
-    template_name = 'CompaniesTemplates/alibaba.html'
+class INTC(TemplateView):
+    template_name = 'CompaniesTemplates/INTC.html'
 
+class MSFT(TemplateView):
+    template_name = 'CompaniesTemplates/MSFT.html'
 
-class AMZN(TemplateView):
-    template_name = 'CompaniesTemplates/amazon.html'
+class NVDA(TemplateView):
+    template_name = 'CompaniesTemplates/NVDA.html'
 
+class RTN(TemplateView):
+    template_name = 'CompaniesTemplates/RTN.html'
 
-class BTC_USD(TemplateView):
-    template_name = 'CompaniesTemplates/bitcoin.html'
+class TWTR(TemplateView):
+    template_name = 'CompaniesTemplates/TWTR.html'
+
+class YHOO(TemplateView):
+    template_name = 'CompaniesTemplates/YHOO.html'
