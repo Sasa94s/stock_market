@@ -23,6 +23,7 @@ from django.contrib import admin
 from django.urls import path
 from profiles import views
 from profiles import views as profiles_views
+from dataVisualization.views import simple_chart
 
 urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
@@ -43,6 +44,7 @@ urlpatterns = [
     path('diagrams/microsoft', data_visual.MSFT.as_view(), name='microsoft'),
     path('diagrams/samsung', data_visual.SSNLF.as_view(), name='samsung'),
     path('diagrams/twitter', data_visual.TWTR.as_view(), name='twitter'),
+    path('simple_chart', simple_chart, name='simple_chart')
 
 ]
 

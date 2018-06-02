@@ -3,35 +3,38 @@
     <h1 class="h2">Ali Baba</h1>
 {% endblock coName %}
 {% block plot %}
-            <!-- Nav pills -->
-            <ul class="nav nav-pills" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="pill" href="#home">Plot 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="pill" href="#menu1">Plot 2 </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="pill" href="#menu2">Plot 3</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="pill" href="#menu3">Plot 4 </a>
-                    </li>
-                </ul>
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div id="home" class="container tab-pane active"><br>
-                        {% include "Comparison of Calibration of Classifiers in Scikit-learn.html" %}
-                    </div>
-    
-                    <div id="menu1" class="container tab-pane fade"><br>
-                    </div>
-                    <div id="menu2" class="container tab-pane fade"><br>
-                
-                        </div>
-                        <div id="menu3" class="container tab-pane fade"><br>
-                        </div>
-                    </div>
+    <!-- Nav pills -->
+    <ul class="nav nav-pills" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="pill" href="#home">Plot 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#menu1">Plot 2 </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#menu2">Plot 3</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="pill" href="#menu3">Plot 4 </a>
+        </li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div id="home" class="container tab-pane active"><br>
+            <iframe src='../simple_chart'></iframe>
+        </div>
+
+        <div id="menu1" class="container tab-pane fade">
+            <br>
+        </div>
+        <div id="menu2" class="container tab-pane fade"><br>
+
+        </div>
+        <div id="menu3" class="container tab-pane fade"><br>
+        </div>
+    </div>
+
+
 {% endblock plot %}
 {% block table %}
     <!-- Tables-->

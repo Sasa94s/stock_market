@@ -1,0 +1,19 @@
+<!-- Inheret the base template-->
+<!-- load files from static folder-->
+{% load static %}
+
+<!-- Content-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment with Bokeh</title>
+    <script src='{% static "css/bokeh-0.12.15.min.css" %}'></script>
+    <script src='{% static "javascript/bokeh-0.12.15.min.js" %}'></script>
+
+</head>
+<body>
+    {{ the_div|safe }}
+    {{ the_script|safe }}
+</body>
+</html>

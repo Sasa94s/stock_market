@@ -11,3 +11,5 @@ src/.idea/workspace.xml
 *.iml
 *.xml
 *.pyc
+src/.idea/workspace.xml
+*.pyc
