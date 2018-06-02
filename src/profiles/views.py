@@ -4,62 +4,66 @@ from django.core.exceptions import PermissionDenied
 from django.forms.models import inlineformset_factory
 from django.shortcuts import render, HttpResponseRedirect
 from django.views.generic import TemplateView
+
 from .forms import UserForm
 from .models import UserProfile
 
 
 # Create your views here.
-
 class home(TemplateView):
     template_name = 'home.html'
-
 
 class about(TemplateView):
     template_name = 'about.html'
 
 
-@login_required
-def userProfile(request):
-    user = request.user
-    context = {'user': user}
-    template = 'profile.html'
-    return render(request, template, context)
+class userProfile(TemplateView):
+    template_name = 'profile.html'
+
+    @login_required
+    def userProfile(request):
+        user = request.user
+        context = {'user': user}
+        return render(request, template_name, context)
 
 
-@login_required  # only logged in users should access this
-def edit_user(request):
-    pk = request.user.pk
-    # querying the User object with pk from url
-    user = User.objects.get(pk=pk)
+class EditUser(TemplateView):
+    template_name = "account/profile_edit.html"
 
-    # prepopulate UserProfileForm with retrieved user values from above.
-    user_form = UserForm(instance=user)
+    @login_required  # only logged in users should access this
+    def edit_user(request):
+        pk = request.user.pk
+        # querying the User object with pk from url
+        user = User.objects.get(pk=pk)
 
-    # The sorcery begins from here, see explanation below
-    ProfileInlineFormset = inlineformset_factory(User, UserProfile,
-                                                 fields=(
-                                                     'photo', 'website', 'bio', 'phone', 'city', 'country',
-                                                     'organization'))
-    formset = ProfileInlineFormset(instance=user)
+        # prepopulate UserProfileForm with retrieved user values from above.
+        user_form = UserForm(instance=user)
 
-    if request.user.is_authenticated and request.user.id == user.id:
-        if request.method == "POST":
-            user_form = UserForm(request.POST, request.FILES, instance=user)
-            formset = ProfileInlineFormset(request.POST, request.FILES, instance=user)
+        # The sorcery begins from here, see explanation below
+        ProfileInlineFormset = inlineformset_factory(User, UserProfile,
+                                                     fields=(
+                                                         'photo', 'website', 'bio', 'phone', 'city', 'country',
+                                                         'organization'))
+        formset = ProfileInlineFormset(instance=user)
 
-            if user_form.is_valid():
-                created_user = user_form.save()
-                formset = ProfileInlineFormset(request.POST, request.FILES, instance=created_user)
+        if request.user.is_authenticated and request.user.id == user.id:
+            if request.method == "POST":
+                user_form = UserForm(request.POST, request.FILES, instance=user)
+                formset = ProfileInlineFormset(request.POST, request.FILES, instance=user)
 
-                if formset.is_valid():
-                    created_user.save()
-                    formset.save()
-                    return HttpResponseRedirect('/profile/')
+                if user_form.is_valid():
+                    created_user = user_form.save()
+                    formset = ProfileInlineFormset(request.POST, request.FILES, instance=created_user)
 
-        return render(request, "account/profile_edit.html", {
-            "noodle": pk,
-            "noodle_form": user_form,
-            "formset": formset,
-        })
-    else:
-        raise PermissionDenied
+                    if formset.is_valid():
+                        created_user.save()
+                        formset.save()
+                        return HttpResponseRedirect('/profile/')
+
+            return render(request, template_name, {
+                "noodle": pk,
+                "noodle_form": user_form,
+                "formset": formset,
+            })
+        else:
+            raise PermissionDenied
