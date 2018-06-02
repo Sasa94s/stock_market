@@ -21,7 +21,6 @@ from django.conf.urls import include
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
-from profiles import views
 from profiles import views as profiles_views
 
 urlpatterns = [
@@ -30,11 +29,11 @@ urlpatterns = [
     path('home/', profiles_views.home.as_view(), name='home'),
     path('diagrams/', data_visual.Diagrams.as_view(), name='diagrams'),
     path('about/', profiles_views.about.as_view(), name='about'),
-    path('profile/', profiles_views.userProfile, name='profile'),
-    path('contact/', contact_views.contact, name='contact'),
-    path('checkout/', checkout_views.checkout, name='checkout'),
+    path('profile/', profiles_views.userProfile.as_view(), name='profile'),
+    path('contact/', contact_views.contact.as_view(), name='contact'),
+    path('checkout/', checkout_views.checkout.as_view(), name='checkout'),
     path('accounts/', include('allauth.urls')),
-    path('profile/edit/', views.edit_user, name='account_update'),
+    path('profile/edit/', profiles_views.EditUser.as_view(), name='account_update'),
     path('diagrams/amazon', data_visual.AMZN.as_view(), name='amazon'),
     path('diagrams/apple', data_visual.APPL.as_view(), name='apple'),
     path('diagrams/alibaba', data_visual.BABA.as_view(), name='alibaba'),
