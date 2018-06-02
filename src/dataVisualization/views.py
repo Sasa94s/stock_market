@@ -18,9 +18,12 @@ class GOOG(TemplateView):
 
 class INTC(TemplateView):
     template_name = 'CompaniesTemplates/INTC.html'
-
+0
 class MSFT(TemplateView):
     template_name = 'CompaniesTemplates/MSFT.html'
+
+class EA(TemplateView):
+    template_name = 'CompaniesTemplates/EA.html'
 
 class NVDA(TemplateView):
     template_name = 'CompaniesTemplates/NVDA.html'
