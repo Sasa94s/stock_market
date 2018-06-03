@@ -24,7 +24,6 @@ from django.urls import path
 from profiles import views as profiles_views
 from profiles import views
 
-
 urlpatterns = [
     path('admin/', admin.site.urls, name='admin'),
     path('', profiles_views.home.as_view(), name='home'),

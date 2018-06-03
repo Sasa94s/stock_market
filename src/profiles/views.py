@@ -24,7 +24,7 @@ class userProfile(TemplateView):
     def userProfile(request):
         user = request.user
         context = {'user': user}
-        return render(request, 'template_name', context)
+        return render(request, template_name, context)
 
 
 @login_required()  # only logged in users should access this
