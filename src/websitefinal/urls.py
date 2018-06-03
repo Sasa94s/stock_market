@@ -33,7 +33,7 @@ urlpatterns = [
     path('contact/', contact_views.contact.as_view(), name='contact'),
     path('checkout/', checkout_views.checkout.as_view(), name='checkout'),
     path('accounts/', include('allauth.urls')),
-    path('profile/edit/', views.edit_user, name='account_update'),
+    path('profile/edit/', profiles_views.EditUser.as_view(), name='account_update'),
     path('diagrams/AAPL', data_visual.AAPL.as_view(), name='AAPL'),
     path('diagrams/AMD', data_visual.AMD.as_view(), name='AMD'),
     path('diagrams/FB', data_visual.FB.as_view(), name='FB'),
