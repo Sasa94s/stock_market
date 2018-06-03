@@ -27,43 +27,38 @@ class userProfile(TemplateView):
         return render(request, template_name, context)
 
 
-class EditUser(TemplateView):
-    template_name = "account/profile_edit.html"
+@login_required()  # only logged in users should access this
+def edit_user(request):
+    pk = request.user.pk
+    # querying the User object with pk from url
+    user = User.objects.get(pk=pk)
 
-    @login_required  # only logged in users should access this
-    def edit_user(request):
-        pk = request.user.pk
-        # querying the User object with pk from url
-        user = User.objects.get(pk=pk)
+    # prepopulate UserProfileForm with retrieved user values from above.
+    user_form = UserForm(instance=user)
 
-        # prepopulate UserProfileForm with retrieved user values from above.
-        user_form = UserForm(instance=user)
+    # The sorcery begins from here, see explanation below
+    ProfileInlineFormset = inlineformset_factory(User, UserProfile,
+                                                 fields=('photo', 'website', 'bio', 'phone', 'city', 'country', 'organization'))
+    formset = ProfileInlineFormset(instance=user)
 
-        # The sorcery begins from here, see explanation below
-        ProfileInlineFormset = inlineformset_factory(User, UserProfile,
-                                                     fields=(
-                                                         'photo', 'website', 'bio', 'phone', 'city', 'country',
-                                                         'organization'))
-        formset = ProfileInlineFormset(instance=user)
+    if request.user.is_authenticated and request.user.id == user.id:
+        if request.method == "POST":
+            user_form = UserForm(request.POST, request.FILES, instance=user)
+            formset = ProfileInlineFormset(request.POST, request.FILES, instance=user)
 
-        if request.user.is_authenticated and request.user.id == user.id:
-            if request.method == "POST":
-                user_form = UserForm(request.POST, request.FILES, instance=user)
-                formset = ProfileInlineFormset(request.POST, request.FILES, instance=user)
+            if user_form.is_valid():
+                created_user = user_form.save(commit=False)
+                formset = ProfileInlineFormset(request.POST, request.FILES, instance=created_user)
 
-                if user_form.is_valid():
-                    created_user = user_form.save()
-                    formset = ProfileInlineFormset(request.POST, request.FILES, instance=created_user)
+                if formset.is_valid():
+                    created_user.save()
+                    formset.save()
+                    return HttpResponseRedirect('/profile/')
 
-                    if formset.is_valid():
-                        created_user.save()
-                        formset.save()
-                        return HttpResponseRedirect('/profile/')
-
-            return render(request, template_name, {
-                "noodle": pk,
-                "noodle_form": user_form,
-                "formset": formset,
-            })
-        else:
-            raise PermissionDenied
+        return render(request, "account/profile_edit.html", {
+            "noodle": pk,
+            "noodle_form": user_form,
+            "formset": formset,
+        })
+    else:
+        raise PermissionDenied
