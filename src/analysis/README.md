@@ -14,6 +14,10 @@
     ```
     \c stock
     ```
+- Create a user:
+    ```
+    CREATE USER analyst WITH PASSWORD 'p1p2p3p4p5';
+    ```
 - Drop `company`, `information` table if they exist:
     ```
     DROP TABLE IF EXISTS company;
