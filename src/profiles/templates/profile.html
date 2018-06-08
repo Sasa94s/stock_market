@@ -9,23 +9,57 @@
 
 <!-- Content-->
 {% block content %}
-    <div class="col-md-12 col-sm-offset-0">
+    <div class="container page">
         <h1>{% trans "Profile" %}</h1>
         {% if not user.user.photo %}
             <img src="{% static 'img/default.png' %}" width="250" class='img-responsive'/>
         {% else %}
             <img src="{{ user.user.photo.url }}" width="250" class='img-responsive'>
         {% endif %}
-        Credit: {{ user.user.Credit }} <br>
-        Username: {{ user.username }} <br>
-        Email: {{ user.email }} <br>
-        Date Joined: {{ user.date_joined }}<br>
-        Bio: {{ user.user.bio }} <br>
-        Phone: {{ user.user.phone }}<br>
-        website: {{ user.user.website }}<br>
-        city: {{ user.user.city }}<br>
-        country: {{ user.user.country }}<br>
-        organization: {{ user.user.organization }}<br>
+        <table class="table  table-responsive table-sm table-hover tableinput">
+                <tbody>
+                  <tr>
+                    <th>Credit </th>
+                    <td>{{ user.user.Credit }}</td>
+                  </tr>
+                  <tr>
+                     <th>Username </th>
+                    <td>{{ user.username }}</td>
+                  </tr>
+                  <tr>
+                     <th>    Email </th>
+                    <td>{{ user.email }}</td>
+                  </tr>
+                  <tr>
+                        <th>    Date Joined </th>
+                       <td>{{ user.date_joined }}</td>
+                     </tr>
+                     <tr>
+                            <th>       Bio </th>
+                           <td>{{ user.user.bio }}</td>
+                         </tr>
+                         <tr>
+                                <th>    Phone </th>
+                                <td>{{ user.user.phone }}</td>
+                             </tr>
+                             <tr>
+                                    <th>     website </th>
+                                   <td>{{ user.user.website }}</td>
+                                 </tr>
+                                 <tr>
+                                     <th>   city </th>
+                                       <td>{{ user.user.city }}</td>      
+                                     </tr>
+                                     <tr>
+                                            <th>    country </th>
+                                           <td>{{ user.user.country }}</td>
+                                         </tr>
+                                         <tr>
+                                                <th>    organization </th>
+                                               <td>{{ user.user.organization }}</td>
+                                             </tr>
+                </tbody>
+              </table>
 
 
         {% for emailaddress in user.emailaddress_set.all %}
@@ -44,12 +78,10 @@
                 <button onclick="window.location.href='{% url 'account_set_password' %}'">Set Password</button>
             {% endif %}
         {% endfor %}
-        <br>
+        <div class="container">
         <button onclick="window.location.href='{% url 'account_update' %}'">Edit Profile</button>
-
-
-        <br>
         <button onclick="window.location.href='{% url 'account_logout' %}'">SignOut</button>
+    </div>   
     </div>
 
 
