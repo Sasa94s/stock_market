@@ -1,0 +1,14 @@
+.pageabout{
+    padding-top: 115px;
+    min-height:1000px;
+}
+.headname{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+}
+.cont{
+    color: #0b2da9;
+    font-family: cursive;
+    font-size: large;
+}
