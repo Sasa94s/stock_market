@@ -1,11 +1,11 @@
 
 footer {
-    background-color:#565656;
+    background-color:#ececec;
     width: 100%;
     padding: 60px 0px;
 }
 ul{
-color: white;
+color: #5f6f3f;
 font-family: cursive;
 font-size: 15px;
 list-style:none;
@@ -17,9 +17,9 @@ list-style:none;
     font-size: 32px;
 }
 .head{
-    color: #bda033;
+    color: #1f96ea;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     font-size: 26px;
-
+    padding-left: 34px;
 }
