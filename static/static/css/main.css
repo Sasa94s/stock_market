@@ -15,7 +15,14 @@
     padding-top: 112px;
 }
 /* table edits*/
-
+h4{
+    color: #2635e2;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    padding-top: 10px;
+    font-size: 30px;
+}
 .tablehead{
 
 }
