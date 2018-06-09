@@ -9,50 +9,53 @@ from sklearn import preprocessing
 from sklearn import utils
 from sklearn.metrics import scorer
 from sklearn.metrics import accuracy_score
+from decimal import Decimal
 
 
-def extractBolingerFeatures(df):
-    '''
-    Input:
-        df : A pandas DataFrame should contain adj_close , mid_band(20d), upper_bannd,'lower_band','decision'
-    Output:
-        x: pandas series (features_cols)
-        y: pandas series (label_cols)
-        npY: numpy array (label_cols)
-    '''
-    feature_cols = ['adj_close', '20d', 'upperband', 'lowerband']
-    label_cols = ['decision']
-    x = df[feature_cols]
-    y = df[label_cols]
-    npY = np.array(y)
-    return (x, y, npY)
+def backtest_bollinger(data):
+    
+    signals = data
+    signals["20d"] = np.round(signals["close"].rolling(window = 20, center = False).mean(), 2)
+
+    # 2. Compute rolling standard deviation
+    apple_rstd = np.round(signals['close'].rolling(window = 20, center = False).std(), 2)
+
+    # 3. Compute upper and lower bands
+    signals['upperband'] = signals['20d'] + 2 * apple_rstd
+    signals['lowerband'] = signals['20d'] - 2 * apple_rstd
+
+    # Check if the high and low get through upperband and lowerband
+    signals['high-upperband'] = signals['high'].astype(float) - signals['upperband'].astype(float)
+    signals['low-lowerband'] = signals['low'].astype(float)-signals['lowerband'].astype(float)
+
+    # Label
+    signals['decision'] = np.where(signals['high-upperband'] > 0.0 , 'Sell',np.where( signals['low-lowerband'] < 0.0,'Buy','Buy & Sell'))
+    signals = signals.dropna()
+
+    features_col = ['high','low','upperband','lowerband']
+    label_col = ['decision']
+    features = signals[features_col]
+    label = signals[label_col]
+    
+    return (features,label)
 
 
 def ApplyModel(model, features, label, predictInputList):
-     '''
-    Input:
-        model : a string define model u want to use (knn, dtc, gnb)
-        features : A pandas DataFrame contain feature_cols will be used to train machine.
-        label : A pandas DataFrame contain label_cols will be used to train machine.
-        predictInputList : A list contains feature_cols u want to predict
-    Output:
-       A string result of the predicted input
-    '''
-    if str(model).lower() == 'knn'
+
+    if str(model).lower() == 'knn':
         knn = KNeighborsClassifier(n_neighbors=3, metric='euclidean')
-        knn.fit(fetures, label)
-        y_predict = str(knn.predict(predictList))
+        knn.fit(features, label)
+        y_predict = str(knn.predict(predictInputList))
         return y_predict
-    elif tr(model).lower() == 'dtc'
+
+    elif str(model).lower() == 'dtc':
         dtc = DecisionTreeClassifier(criterion='entropy')
-        dtc.fit(fetures,label)
+        dtc.fit(fetures, label)
         y_predict = str(dtc.predict(predictList))
         return y_predict
-    elif str(model).lower() is 'gnb':
+
+    elif str(model).lower() == 'gnb':
         gnb = GaussianNB()
-        gnb.fit(fetures,label)
+        gnb.fit(fetures, label)
         y_predict = str(gnb.predict(predictList))
         return y_predict
-    else : 
-        print('please enter a valid knn model model')
-        

@@ -1,45 +1,71 @@
-{% extends 'diagrams.html' %}
-{% block coName %}
-    <h1 class="h2">Apple Inc.</h1>
-{% endblock coName %}
-{% block plot %}
-            <!-- Nav pills -->
-            <ul class="nav nav-pills" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="pill" href="#home">Plot 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="pill" href="#menu1">Plot 2 </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="pill" href="#menu2">Plot 3</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="pill" href="#menu3">Plot 4 </a>
-                    </li>
-                </ul>
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div id="home" class="container tab-pane active"><br>
-                        {% include "Comparison of Calibration of Classifiers in Scikit-learn.html" %}
-                    </div>
-    
-                    <div id="menu1" class="container tab-pane fade"><br>
-                    </div>
-                    <div id="menu2" class="container tab-pane fade"><br>
-                
-                        </div>
-                        <div id="menu3" class="container tab-pane fade"><br>
-                        </div>
-                    </div>
-{% endblock plot %}
-{% block table %}
-    <!-- Tables-->
+{% extends 'diagrams.html' %} {% block coName %}
+<h1 class="h2">Apple Inc.</h1>
+{% endblock coName %} {% block plot %}
+<!-- Nav pills -->
+<ul class="nav nav-pills" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" data-toggle="pill" href="#home">Candilstick plot price/day</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#menu1">Plot 2 </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#menu2">Plot 3</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#menu3">Plot 4 </a>
+    </li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+    <div id="home" class="container tab-pane active">
+        <br> {% include "Comparison of Calibration of Classifiers in Scikit-learn.html" %}
 
-    <h2>Section title</h2>
-    <div class="table-responsive">
-        <table class="table table-striped table-sm">
-            <thead>
+        <!-- Machine learning model input form-->
+        <div id="machine">
+            <form action="/diagrams/AAPL" method="post">
+                {% csrf_token %}
+
+                <!-- Select menue choose Machine Learning model-->
+                <select class="custom-select" name="model">
+                        <option value="knn">knn</option>
+                        <option value="dtc">decesion tree c4.5</option>
+                        <option value="gnb">gaussian nayiv bayes</option>
+                </select>
+
+                <!--Features Input-->
+                <input type="text" name="feature1" placeholder="High">
+                <input type="text" name="feature2" placeholder="Low">
+                <input type="text" name="feature3" placeholder="upper band">
+                <input type="text" name="feature4" placeholder="lower band">
+                <button type="submit">Recommend</button>
+            </form>
+        </div>
+
+        <!--Machine Learning outut paragraph -->
+        <div>
+            <h1>
+                Result : {{decesion}}
+            </h1>
+            <p>{{recommendtion}}</p>
+        </div>
+    </div>
+
+    <div id="menu1" class="container tab-pane fade"><br>
+    </div>
+    <div id="menu2" class="container tab-pane fade"><br>
+
+    </div>
+    <div id="menu3" class="container tab-pane fade"><br>
+    </div>
+</div>
+{% endblock plot %} {% block table %}
+<!-- Tables-->
+
+<h2>Section title</h2>
+<div class="table-responsive">
+    <table class="table table-striped table-sm">
+        <thead>
             <tr>
                 <th>date</th>
                 <th>open</th>
@@ -49,8 +75,8 @@
                 <th>adjusted close</th>
                 <th>volume</th>
             </tr>
-            </thead>
-            <tbody>
+        </thead>
+        <tbody>
             <tr>
                 <td>Lorem</td>
                 <td>ipsum</td>
@@ -141,7 +167,7 @@
                 <td>dolor</td>
                 <td>sit</td>
             </tr>
-            </tbody>
-        </table>
-    </div>
+        </tbody>
+    </table>
+</div>
 {% endblock table %}
