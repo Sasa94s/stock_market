@@ -1,0 +1,18 @@
+.page{
+padding-top: 88px;
+}
+h1{
+    color:black;
+}
+.tableinput{
+    padding-top: 10px;
+}
+td{
+    color:#0b2da9;
+    text-align: right;
+}
+th{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+}

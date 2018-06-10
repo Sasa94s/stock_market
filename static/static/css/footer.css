@@ -1,0 +1,25 @@
+
+footer {
+    background-color:#ececec;
+    width: 100%;
+    padding: 60px 0px;
+}
+ul{
+color: #5f6f3f;
+font-family: cursive;
+font-size: 15px;
+list-style:none;
+}
+.brand{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+.head{
+    color: #1f96ea;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 26px;
+    padding-left: 34px;
+}

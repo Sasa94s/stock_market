@@ -1,0 +1,20 @@
+.pageabout{
+    padding-top: 115px;
+    min-height:1000px;
+}
+.bg-light {
+    background-color: #a4b5c5!important;
+}
+.headname{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 22px;
+}
+.cont{
+    color: #0b2da9;
+    font-family: cursive;
+    font-size: large;
+    text-transform: capitalize;
+}

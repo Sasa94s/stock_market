@@ -10,17 +10,30 @@
 .theme-showcase .navbar .container {
     width: auto;
 }
+.carousel {
+    position: relative;
+    padding-top: 112px;
+}
+/* table edits*/
+h4{
+    color: #2635e2;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    padding-top: 10px;
+    font-size: 30px;
+}
+.tablehead{
 
-
+}
+.tabl {
+    margin-top: 20px;
+    background-color: white;
+}
 body {
-    /*padding-top: 70px;*/
-    /*padding-bottom: 30px;*/
-    background-color: rgba(0, 53, 255, 0.06);
+    background-color:#f9f9f9;
 
 }
 
-.col-md-12 {
-    width: 100%;
 
-}
 
