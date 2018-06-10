@@ -4,22 +4,22 @@
 <!-- Nav pills -->
 <ul class="nav nav-pills" role="tablist">
     <li class="nav-item">
-        <a class="nav-link active" data-toggle="pill" href="#home">Candilstick plot price/day</a>
+        <a class="nav-link active" data-toggle="pill" href="#home">Bollinger Bands Strategy</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#menu1">Plot 2 </a>
+        <a class="nav-link" data-toggle="pill" href="#menu1">Return </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#menu2">Plot 3</a>
+        <a class="nav-link" data-toggle="pill" href="#menu2">Moving Crossover</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" data-toggle="pill" href="#menu3">Plot 4 </a>
+        <a class="nav-link" data-toggle="pill" href="#menu3">Stock Prices</a>
     </li>
 </ul>
 <!-- Tab panes -->
 <div class="tab-content">
     <div id="home" class="container tab-pane active">
-        <br> {% include "Comparison of Calibration of Classifiers in Scikit-learn.html" %}
+        <br> {% include "includes/apple/AAPL Bollinger Bands Strategy.html" %}
 
         <!-- Machine learning model input form-->
         <div id="machine">
@@ -51,18 +51,27 @@
         </div>
     </div>
 
-    <div id="menu1" class="container tab-pane fade"><br>
+    <div id="menu1" class="container tab-pane fade">
+        <h3>Daily Return</h3>
+        <br>{% include "includes/apple/AAPL Daily Return prices.html" %}
+        <h3>Monthly Return</h3>
+        <br>{% include "includes/apple/AAPL Monthly Return prices.html" %}
     </div>
-    <div id="menu2" class="container tab-pane fade"><br>
 
+    <div id="menu2" class="container tab-pane fade"><br>
+        <h3>Moving Crossover Stratigy</h3>
+        <br>{% include "includes/apple/AAPL Moving Crossover Strategy.html" %}
     </div>
-    <div id="menu3" class="container tab-pane fade"><br>
+
+    <div id="menu3" class="container tab-pane fade">
+        <h3>Stock Prices</h3>
+        <br>{% include "includes/apple/AAPL Stock Prices.html" %}
     </div>
 </div>
 {% endblock plot %} {% block table %}
 <!-- Tables-->
 
-<h2>Section title</h2>
+<!-- <h2>Section title</h2>
 <div class="table-responsive">
     <table class="table table-striped table-sm">
         <thead>
@@ -169,5 +178,5 @@
             </tr>
         </tbody>
     </table>
-</div>
+</div> -->
 {% endblock table %}
