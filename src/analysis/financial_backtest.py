@@ -1,3 +1,6 @@
+import pandas as pd
+import numpy as np
+
 def backtest_crossover(data, short_window=40, long_window=100):
     # Initialize the `signals` DataFrame with the `signal` column
     signals = pd.DataFrame(index=data.index)
