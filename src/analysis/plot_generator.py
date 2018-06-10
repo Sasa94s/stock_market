@@ -1,0 +1,30 @@
+import financial_data, financial_statistics, financial_backtest, financial_plot
+
+def generate(symbol):
+    df = financial_data.get_local_data(symbol, 'data/company profiles')
+    financial_statistics.preprocessing(df)
+    financial_plot.plot_prices(df, '%s Stock Prices' % symbol)
+    print("%s Plot prices file written." % symbol)
+    financial_plot.plot_return(df, financial_statistics.daily_return, title="%s Daily Return prices" % symbol)
+    print("%s Daily Return prices file written." % symbol)
+    financial_plot.plot_return(df, financial_statistics.monthly_return, title="%s Monthly Return prices" % symbol)
+    print("%s Monthly Return prices file written." % symbol)
+    df_signals = financial_backtest.backtest_crossover(df)
+    financial_plot.plot_crossover_signals(df, df_signals, ticker=symbol)
+    print("%s Crossover Backtest file written." % symbol)
+    df_signals = financial_backtest.backtest_bollinger(df)
+    financial_plot.plot_bollinger_signals(df, df_signals, ticker=symbol)
+    print("%s Bollinger Bands Backtest file written." % symbol)
+
+if __name__ == '__main__':
+    generate('AAPL')
+    generate('MSFT')
+    generate('GOOG')
+    generate('FB')
+    generate('TWTR')
+    generate('YHOO')
+    generate('EA')
+    generate('RTN')
+    generate('NVDA')
+    generate('INTC')
+    generate('AMD')

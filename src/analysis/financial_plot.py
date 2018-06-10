@@ -3,9 +3,10 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from bokeh.plotting import Figure, output_file, show
+from bokeh.plotting import Figure, output_file, show, save
 from bokeh.io import push_notebook, show, output_notebook
 from bokeh.models import HoverTool, ColumnDataSource
+import financial_statistics
 
 def plot_prices(df, template_name='stock', notebook=False, x='Date', y='Adj. Close', title="Stock prices", xlabel="Date", ylabel="Price"):
     """
@@ -56,8 +57,9 @@ def plot_prices(df, template_name='stock', notebook=False, x='Date', y='Adj. Clo
     else:
         # output the results
         output_file('%s.html' % template_name)
+        save(p)
 
-def plot_return(df, returnFunc, template_name='return', notebook=False, x='Date', y='Adj. Close', title="Return prices", xlabel="Date", ylabel="Price"):
+def plot_return(df, returnFunc, notebook=False, x='Date', y='Adj. Close', title="Return prices", xlabel="Date", ylabel="Price"):
     """
     Bokeh Plot for return prices with a custom title and meaningful axis labels.
     template_name: output file name of plot
@@ -88,7 +90,8 @@ def plot_return(df, returnFunc, template_name='return', notebook=False, x='Date'
         push_notebook()
     else:
         # output the results
-        output_file('%s.html' % template_name)
+        output_file('%s.html' % title)
+        save(p)
 
 def plot_return_dist(df, returnFunc, title='Daily Return Prices Distribution'):
     """Matplotlib for return prices distribution"""   
@@ -141,6 +144,7 @@ def calc_volatility(df, returnFunc, min_periods=75, template_name='volatility', 
     else:
         # output the results
         output_file('%s.html' % template_name)
+        save(p)
 
 
 def combine_stocks(data, tickers):
@@ -155,7 +159,7 @@ def transform_stocks(data, tickers):
 
 def hist_returns(all_data):
     # Calculate the daily percentage change for `daily_close_px`
-    daily_pct_change = daily_return(all_data)
+    daily_pct_change = financial_statistics.daily_return(all_data)
 
     # Plot the distributions
     daily_pct_change.hist(bins=50, sharex=True, figsize=(12,8))
@@ -210,6 +214,7 @@ def compute_multiple_volatility(data, returnFunc, tickers, template_name='volati
     else:
         # output the results
         output_file('%s.html' % template_name)
+        save(p)
 
 def plot_corr(group1, ticker1, group2, ticker2, template_name='volatility', notebook=False):
     """
@@ -248,3 +253,90 @@ def plot_corr(group1, ticker1, group2, ticker2, template_name='volatility', note
     else:
         # output the results
         output_file('%s.html' % template_name)
+        save(p)
+
+        
+def plot_bollinger_signals(data, signals, ticker=None, notebook=False):
+    # create a new plot with a title and axis labels
+    p = Figure(title=ticker+' Bollinger Bands Strategy',
+               x_axis_label='Date',
+               x_axis_type='datetime',
+               y_axis_label='Price in $',
+               plot_height=500,
+               plot_width=950,
+               tools=['pan','wheel_zoom'],
+               toolbar_location='below')
+    
+    inc = data['Close'] > data['Open']
+    dec = data['Open'] > data['Close']
+    w = 12*60*60*1000 # half day in ms
+    
+    p.segment(data.index, data['High'], data.index, data['Low'], color="black")
+    p.vbar(data.index[inc], w, data['Open'][inc], data['Close'][inc], fill_color="#D5E1DD", line_color="black")
+    p.vbar(data.index[dec], w, data['Open'][dec], data['Close'][dec], fill_color="#F2583E", line_color="black")
+    
+    # configure so that Bokeh chooses what (if any) scroll tool is active
+    p.toolbar.active_scroll = "auto"
+    
+    # add a line renderer with legend and line thickness
+    p.line(signals.index, signals['mediumband'], line_width=2, legend='Mediumband', line_color='black')
+    p.line(signals.index, signals['upperband'], line_width=2, legend='Upperband', line_color='orange')
+    p.line(signals.index, signals['lowerband'], line_width=2, legend='Lowerband', line_color='blue')
+    
+    p.triangle(signals.loc[signals.positions == 1.0].index, 
+             signals.lowerband[signals.positions == 1.0],
+             size=15, fill_color='green', legend='Buy')
+    p.inverted_triangle(signals.loc[signals.positions == -1.0].index, 
+             signals.upperband[signals.positions == -1.0],
+             size=15, fill_color='red', legend='Sell')
+        
+    p.legend.location = "top_left"
+    p.legend.click_policy="hide"
+    
+    if notebook:
+        # show the results
+        show(p, notebook_handle=True)
+        push_notebook()
+    else:
+        # output the results
+        output_file('%s Bollinger Bands Strategy.html' % ticker)
+        save(p)
+
+
+def plot_crossover_signals(data, signals, ticker=None, notebook=False):
+    # create a new plot with a title and axis labels
+    p = Figure(title=ticker+' Moving Crossover Strategy',
+               x_axis_label='Date',
+               x_axis_type='datetime',
+               y_axis_label='Price in $',
+               plot_height=500,
+               plot_width=950,
+               tools=['pan','wheel_zoom'],
+               toolbar_location='below')
+   
+    # configure so that Bokeh chooses what (if any) scroll tool is active
+    p.toolbar.active_scroll = "auto"
+    
+    # add a line renderer with legend and line thickness
+    p.line(data.index, data['Close'], line_width=2, legend='Close', line_color='black')
+    p.line(signals.index, signals['short_mavg'], line_width=2, legend='Slow MA', line_color='orange')
+    p.line(signals.index, signals['long_mavg'], line_width=2, legend='Fast MA', line_color='blue')
+    
+    p.triangle(signals.loc[signals.positions == 1.0].index, 
+             signals.short_mavg[signals.positions == 1.0],
+             size=15, fill_color='green', legend='Bullish Crossover')
+    p.inverted_triangle(signals.loc[signals.positions == -1.0].index, 
+             signals.short_mavg[signals.positions == -1.0],
+             size=15, fill_color='red', legend='Bearish Crossover')
+        
+    p.legend.location = "top_left"
+    p.legend.click_policy="hide"
+    
+    if notebook:
+        # show the results
+        show(p, notebook_handle=True)
+        push_notebook()
+    else:
+        # output the results
+        output_file('%s Moving Crossover Strategy.html' % ticker)
+        save(p)
